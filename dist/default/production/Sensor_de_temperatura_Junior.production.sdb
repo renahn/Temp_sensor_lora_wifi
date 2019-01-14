@@ -1,0 +1,132 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15376 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"52 C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+[v _main main `(v  1 e 1 0 ]
+"50 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"57
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"73
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"57 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"732 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"794
+[v _TRISB TRISB `VEuc  1 e 1 @19 ]
+"856
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"918
+[v _TRISD TRISD `VEuc  1 e 1 @21 ]
+"980
+[v _TRISE TRISE `VEuc  1 e 1 @22 ]
+"1018
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+"1080
+[v _LATB LATB `VEuc  1 e 1 @25 ]
+"1142
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+"1204
+[v _LATD LATD `VEuc  1 e 1 @27 ]
+"1266
+[v _LATE LATE `VEuc  1 e 1 @28 ]
+"9908
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"9953
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"10001
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"10046
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"10096
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"10141
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"11203
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"11343
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"11383
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @2192 ]
+"11440
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"11491
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"11549
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"20258
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"20320
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"20382
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"20444
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7995 ]
+"20754
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"20816
+[v _WPUB WPUB `VEuc  1 e 1 @8004 ]
+"20878
+[v _ODCONB ODCONB `VEuc  1 e 1 @8005 ]
+"20940
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @8006 ]
+"21250
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"21312
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"21374
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"21436
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @8017 ]
+"21746
+[v _ANSELD ANSELD `VEuc  1 e 1 @8025 ]
+"21808
+[v _WPUD WPUD `VEuc  1 e 1 @8026 ]
+"21870
+[v _ODCOND ODCOND `VEuc  1 e 1 @8027 ]
+"21932
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @8028 ]
+"22056
+[v _ANSELE ANSELE `VEuc  1 e 1 @8036 ]
+"22088
+[v _WPUE WPUE `VEuc  1 e 1 @8037 ]
+"22126
+[v _ODCONE ODCONE `VEuc  1 e 1 @8038 ]
+"22158
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @8039 ]
+"24256
+[v _LATC5 LATC5 `VEb  1 e 0 @213 ]
+"52 C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"72
+[v main@i i `ul  1 a 4 0 ]
+"79
+} 0
+"50 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"55
+} 0
+"73
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"87
+} 0
+"57 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"119
+} 0
+"57 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
