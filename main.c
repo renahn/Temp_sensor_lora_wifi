@@ -42,12 +42,16 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#include "app_uart.h"
 
 /*
                          Main application
  */
 
 #define LED LATC5
+
+
+
 
 void main(void)
 {
@@ -76,7 +80,9 @@ void main(void)
     {
         for(i=0;i<40000;i++);
         LED ^= 1;
-        EUSART1_Write('E');
+        printf("Renahn /n",0);
+        printf_num(543);
+        printf("/n",1);
         
         if(EUSART1_is_rx_ready())
         {
@@ -86,6 +92,5 @@ void main(void)
         } 
     }
 }
-/**
- End of File
-*/
+
+

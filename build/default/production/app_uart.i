@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "app_uart.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 44 "main.c"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 49 "./mcc_generated_files/mcc.h"
+# 1 "app_uart.c" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -13211,17 +13208,12 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
+# 1 "app_uart.c" 2
 
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
+# 1 "./app_uart.h" 1
 
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 116 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 128 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
+
+
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdint.h" 3
@@ -13294,12 +13286,17 @@ typedef int32_t int_fast32_t;
 typedef uint32_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 131 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "./mcc_generated_files/mcc.h" 2
+# 5 "./app_uart.h" 2
 
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
+
+void printf(uint8_t string[30], uint8_t new_line);
+void printf_num(uint16_t dado);
+# 2 "app_uart.c" 2
 
 # 1 "./mcc_generated_files/eusart1.h" 1
+# 55 "./mcc_generated_files/eusart1.h"
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdbool.h" 1 3
+# 55 "./mcc_generated_files/eusart1.h" 2
 # 97 "./mcc_generated_files/eusart1.h"
 void EUSART1_Initialize(void);
 # 145 "./mcc_generated_files/eusart1.h"
@@ -13312,47 +13309,54 @@ _Bool EUSART1_is_tx_done(void);
 uint8_t EUSART1_Read(void);
 # 280 "./mcc_generated_files/eusart1.h"
 void EUSART1_Write(uint8_t txData);
-# 54 "./mcc_generated_files/mcc.h" 2
-# 69 "./mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 82 "./mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 95 "./mcc_generated_files/mcc.h"
-void PMD_Initialize(void);
-# 44 "main.c" 2
-
-# 1 "./app_uart.h" 1
+# 3 "app_uart.c" 2
 
 
 
-
-
-
-void printf(uint8_t string[30], uint8_t new_line);
-void printf_num(uint16_t dado);
-# 45 "main.c" 2
-# 56 "main.c"
-void main(void)
+void printf(uint8_t string[30], uint8_t new_line)
 {
+    uint8_t i;
 
-    SYSTEM_Initialize();
-# 76 "main.c"
-    uint32_t i;
-    uint8_t data;
-
-    while (1)
+    for(i=0;i<30;i++)
     {
-        for(i=0;i<40000;i++);
-        LATC5 ^= 1;
-        printf("Renahn /n",0);
-        printf_num(543);
-        printf("/n",1);
-
-        if(EUSART1_is_rx_ready())
-        {
-            data = EUSART1_Read();
-            EUSART1_Write(data);
-            EUSART1_Write('H');
-        }
+        if((string[i] == '/') && (string[i+1] == 'n')) break;
+        EUSART1_Write(string[i]);
     }
+
+    if(new_line == 1)
+    {
+        EUSART1_Write(13);
+        EUSART1_Write(10);
+    }
+}
+
+void printf_num(uint16_t dado)
+{
+    char unidade = 0, dezena = 0, centena = 0, milhar = 0;
+
+    while(dado >= 1000)
+    {
+        dado -= 1000;
+        milhar++;
+    }
+    while(dado >= 100)
+    {
+        dado -= 100;
+        centena++;
+    }
+    while(dado >= 10)
+    {
+        dado -= 10;
+        dezena++;
+    }
+    while(dado > 0)
+    {
+        dado -= 1;
+        unidade++;
+    }
+
+    EUSART1_Write(milhar + '0');
+    EUSART1_Write(centena + '0');
+    EUSART1_Write(dezena + '0');
+    EUSART1_Write(unidade + '0');
 }

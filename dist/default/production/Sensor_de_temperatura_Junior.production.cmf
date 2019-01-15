@@ -11,22 +11,25 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\renah\AppData\Local\Temp\s5g0.o
+$C:\Users\renah\AppData\Local\Temp\s4gs.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 5 2
 $dist/default/production\Sensor_de_temperatura_Junior.production.o
 cinit CODE 0 7FD 7FD 3 2
-text1 CODE 0 747 747 D 2
-text2 CODE 0 71E 71E 8 2
-text3 CODE 0 765 765 43 2
-text4 CODE 0 726 726 A 2
-text5 CODE 0 730 730 B 2
-text6 CODE 0 718 718 6 2
-text7 CODE 0 73B 73B C 2
-text8 CODE 0 754 754 11 2
-maintext CODE 0 7A8 7A8 55 2
-cstackCOMMON COMMON 1 70 70 7 1
+text1 CODE 0 72E 72E 66 2
+text2 CODE 0 6D6 6D6 58 2
+text3 CODE 0 669 669 C 2
+text4 CODE 0 675 675 D 2
+text5 CODE 0 64C 64C 8 2
+text6 CODE 0 693 693 43 2
+text7 CODE 0 654 654 A 2
+text8 CODE 0 65E 65E B 2
+text9 CODE 0 646 646 6 2
+text10 CODE 0 682 682 11 2
+maintext CODE 0 794 794 69 2
+cstackCOMMON COMMON 1 70 70 E 1
+stringtext1 STRCODE 0 800 800 A 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -69,10 +72,10 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 4-717 2
-CONST 800-3FFF 2
-ENTRY 4-717 2
-ENTRY 800-3FFF 2
+CONST 4-645 2
+CONST 80A-3FFF 2
+ENTRY 4-645 2
+ENTRY 80A-3FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -129,8 +132,8 @@ SFR61 1E80-1EEF 1
 SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
 STACK 2000-27EF 1
-CODE 4-717 2
-CODE 800-3FFF 2
+CODE 4-645 2
+CODE 80A-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -158,11 +161,10 @@ BANK23 BA0-BEF 1
 BANK24 C20-C6F 1
 BANK25 CA0-CBF 1
 BIGRAM 2000-27EF 1
-COMMON 77-7D 1
-STRCODE 4-717 2
-STRCODE 800-3FFF 2
-STRING 4-717 2
-STRING 800-3FFF 2
+STRCODE 4-645 2
+STRCODE 80A-3FFF 2
+STRING 4-645 2
+STRING 80A-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -177,112 +179,151 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Sensor_de_temperatura_Junior.production.o
-7FD cinit CODE >3226:C:\Users\renah\AppData\Local\Temp\s5g0.
-7FD cinit CODE >3229:C:\Users\renah\AppData\Local\Temp\s5g0.
-7FD cinit CODE >3235:C:\Users\renah\AppData\Local\Temp\s5g0.
-7FD cinit CODE >3237:C:\Users\renah\AppData\Local\Temp\s5g0.
-7FE cinit CODE >3238:C:\Users\renah\AppData\Local\Temp\s5g0.
-754 text8 CODE >93:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-754 text8 CODE >95:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-755 text8 CODE >95:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-755 text8 CODE >97:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-75A text8 CODE >100:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-75F text8 CODE >104:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-760 text8 CODE >105:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-762 text8 CODE >106:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-762 text8 CODE >108:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-764 text8 CODE >109:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-73B text7 CODE >111:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-73C text7 CODE >113:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-73D text7 CODE >113:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-73D text7 CODE >115:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-743 text7 CODE >117:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-746 text7 CODE >118:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-718 text6 CODE >83:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-718 text6 CODE >85:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-71D text6 CODE >86:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-730 text5 CODE >56:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-730 text5 CODE >61:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-733 text5 CODE >64:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-735 text5 CODE >67:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-737 text5 CODE >70:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-739 text5 CODE >73:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-73A text5 CODE >76:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-726 text4 CODE >58:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-726 text4 CODE >61:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-729 text4 CODE >63:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-72A text4 CODE >65:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-72B text4 CODE >67:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-72D text4 CODE >69:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-72E text4 CODE >71:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-72F text4 CODE >72:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-765 text3 CODE >57:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-765 text3 CODE >62:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-767 text3 CODE >63:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-768 text3 CODE >64:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-769 text3 CODE >65:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-76A text3 CODE >66:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-76B text3 CODE >71:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-76D text3 CODE >72:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-76F text3 CODE >73:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-771 text3 CODE >74:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-773 text3 CODE >75:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-775 text3 CODE >80:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-778 text3 CODE >81:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-77A text3 CODE >82:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-77C text3 CODE >83:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-77E text3 CODE >84:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-780 text3 CODE >89:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-781 text3 CODE >90:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-782 text3 CODE >91:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-783 text3 CODE >92:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-784 text3 CODE >93:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-785 text3 CODE >98:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-786 text3 CODE >99:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-787 text3 CODE >100:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-788 text3 CODE >101:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-789 text3 CODE >102:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-78A text3 CODE >107:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-78C text3 CODE >108:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-78E text3 CODE >109:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-790 text3 CODE >110:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-792 text3 CODE >111:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-794 text3 CODE >114:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-797 text3 CODE >115:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-799 text3 CODE >116:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-79A text3 CODE >118:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-79D text3 CODE >119:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-7A2 text3 CODE >121:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-7A4 text3 CODE >122:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-7A6 text3 CODE >123:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-7A7 text3 CODE >129:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
-71E text2 CODE >74:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-71E text2 CODE >77:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-720 text2 CODE >79:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-721 text2 CODE >81:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-722 text2 CODE >83:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-723 text2 CODE >85:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-724 text2 CODE >87:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-725 text2 CODE >88:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-747 text1 CODE >50:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-747 text1 CODE >52:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-74A text1 CODE >53:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-74D text1 CODE >54:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-750 text1 CODE >55:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-753 text1 CODE >56:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
-7A8 maintext CODE >52:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7A8 maintext CODE >55:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7AC maintext CODE >75:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7AC maintext CODE >77:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7DB maintext CODE >78:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7DE maintext CODE >79:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7E2 maintext CODE >81:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7EA maintext CODE >83:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7F0 maintext CODE >84:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7F4 maintext CODE >85:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7F9 maintext CODE >86:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7FA maintext CODE >87:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
-7FB maintext CODE >88:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7FD cinit CODE >3987:C:\Users\renah\AppData\Local\Temp\s4gs.
+7FD cinit CODE >3990:C:\Users\renah\AppData\Local\Temp\s4gs.
+7FD cinit CODE >3996:C:\Users\renah\AppData\Local\Temp\s4gs.
+7FD cinit CODE >3998:C:\Users\renah\AppData\Local\Temp\s4gs.
+7FE cinit CODE >3999:C:\Users\renah\AppData\Local\Temp\s4gs.
+682 text10 CODE >93:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+682 text10 CODE >95:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+683 text10 CODE >95:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+683 text10 CODE >97:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+688 text10 CODE >100:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+68D text10 CODE >104:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+68E text10 CODE >105:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+690 text10 CODE >106:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+690 text10 CODE >108:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+692 text10 CODE >109:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+646 text9 CODE >83:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+646 text9 CODE >85:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+64B text9 CODE >86:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+65E text8 CODE >56:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+65E text8 CODE >61:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+661 text8 CODE >64:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+663 text8 CODE >67:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+665 text8 CODE >70:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+667 text8 CODE >73:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+668 text8 CODE >76:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+654 text7 CODE >58:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+654 text7 CODE >61:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+657 text7 CODE >63:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+658 text7 CODE >65:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+659 text7 CODE >67:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+65B text7 CODE >69:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+65C text7 CODE >71:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+65D text7 CODE >72:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+693 text6 CODE >57:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+693 text6 CODE >62:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+695 text6 CODE >63:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+696 text6 CODE >64:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+697 text6 CODE >65:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+698 text6 CODE >66:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+699 text6 CODE >71:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+69B text6 CODE >72:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+69D text6 CODE >73:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+69F text6 CODE >74:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6A1 text6 CODE >75:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6A3 text6 CODE >80:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6A6 text6 CODE >81:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6A8 text6 CODE >82:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6AA text6 CODE >83:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6AC text6 CODE >84:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6AE text6 CODE >89:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6AF text6 CODE >90:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6B0 text6 CODE >91:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6B1 text6 CODE >92:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6B2 text6 CODE >93:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6B3 text6 CODE >98:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6B4 text6 CODE >99:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6B5 text6 CODE >100:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6B6 text6 CODE >101:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6B7 text6 CODE >102:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6B8 text6 CODE >107:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6BA text6 CODE >108:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6BC text6 CODE >109:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6BE text6 CODE >110:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6C0 text6 CODE >111:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6C2 text6 CODE >114:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6C5 text6 CODE >115:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6C7 text6 CODE >116:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6C8 text6 CODE >118:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6CB text6 CODE >119:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6D0 text6 CODE >121:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6D2 text6 CODE >122:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6D4 text6 CODE >123:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+6D5 text6 CODE >129:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
+64C text5 CODE >74:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+64C text5 CODE >77:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+64E text5 CODE >79:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+64F text5 CODE >81:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+650 text5 CODE >83:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+651 text5 CODE >85:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+652 text5 CODE >87:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+653 text5 CODE >88:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+675 text4 CODE >50:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+675 text4 CODE >52:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+678 text4 CODE >53:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+67B text4 CODE >54:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+67E text4 CODE >55:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+681 text4 CODE >56:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
+669 text3 CODE >111:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+66A text3 CODE >113:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+66B text3 CODE >113:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+66B text3 CODE >115:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+671 text3 CODE >117:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+674 text3 CODE >118:C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
+6D6 text2 CODE >6:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+6D6 text2 CODE >10:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+6DF text2 CODE >12:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+705 text2 CODE >13:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+714 text2 CODE >14:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+71F text2 CODE >16:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+724 text2 CODE >18:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+728 text2 CODE >19:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+72D text2 CODE >20:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+72D text2 CODE >21:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+72E text1 CODE >23:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+72E text1 CODE >25:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+732 text1 CODE >27:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+733 text1 CODE >29:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+737 text1 CODE >30:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+73C text1 CODE >27:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+73C text1 CODE >31:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+746 text1 CODE >32:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+747 text1 CODE >34:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+74B text1 CODE >35:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+750 text1 CODE >32:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+750 text1 CODE >36:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+75A text1 CODE >37:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+75B text1 CODE >39:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+75F text1 CODE >40:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+764 text1 CODE >37:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+764 text1 CODE >41:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+76E text1 CODE >42:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+76F text1 CODE >44:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+773 text1 CODE >45:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+778 text1 CODE >42:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+778 text1 CODE >46:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+77F text1 CODE >48:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+784 text1 CODE >49:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+789 text1 CODE >50:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+78E text1 CODE >51:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+793 text1 CODE >52:C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
+794 maintext CODE >56:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+794 maintext CODE >59:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+798 maintext CODE >79:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+798 maintext CODE >81:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7C7 maintext CODE >82:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7CA maintext CODE >83:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7D2 maintext CODE >84:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7D9 maintext CODE >85:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7E2 maintext CODE >87:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7EA maintext CODE >89:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7F0 maintext CODE >90:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7F4 maintext CODE >91:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7F9 maintext CODE >92:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7FA maintext CODE >93:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+7FB maintext CODE >94:C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -297,13 +338,13 @@ $dist/default/production\Sensor_de_temperatura_Junior.production.o
 %SYMTAB
 ___latbits 3 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Hspace_0 800C 0 ABS 0 - -
-__Hspace_1 77 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
-_EUSART1_Initialize E60 0 CODE 0 text5 dist/default/production\Sensor_de_temperatura_Junior.production.o
+_EUSART1_Initialize CBC 0 CODE 0 text8 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-_PMD_Initialize E3C 0 CODE 0 text2 dist/default/production\Sensor_de_temperatura_Junior.production.o
-main@i 73 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
+_PMD_Initialize C98 0 CODE 0 text5 dist/default/production\Sensor_de_temperatura_Junior.production.o
+main@i 7A 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Hstrings 0 0 ABS 0 strings -
 __CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _LATA 18 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
@@ -322,25 +363,28 @@ _WPUB 1F44 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.produc
 _WPUC 1F4F 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _WPUD 1F5A 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _WPUE 1F65 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-___sp 0 0 STACK 2 stack C:\Users\renah\AppData\Local\Temp\s5g0.o
-_main F50 0 CODE 0 maintext dist/default/production\Sensor_de_temperatura_Junior.production.o
+___sp 0 0 STACK 2 stack C:\Users\renah\AppData\Local\Temp\s4gs.o
+_main F28 0 CODE 0 maintext dist/default/production\Sensor_de_temperatura_Junior.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-start 4 0 CODE 0 init C:\Users\renah\AppData\Local\Temp\s5g0.o
-__end_of_EUSART1_is_rx_ready E3C 0 CODE 0 text6 dist/default/production\Sensor_de_temperatura_Junior.production.o
+start 4 0 CODE 0 init C:\Users\renah\AppData\Local\Temp\s4gs.o
+__end_of_EUSART1_is_rx_ready C98 0 CODE 0 text9 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Hpowerup 0 0 CODE 0 powerup -
+printf@i 77 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
+_printf_num E5C 0 CODE 0 text1 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s5g0.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s5g0.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s5g0.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s5g0.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s5g0.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s5g0.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s4gs.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s4gs.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s4gs.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s4gs.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s4gs.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\renah\AppData\Local\Temp\s4gs.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 _RC1STAbits 11D 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-__end_of_PMD_Initialize E4C 0 CODE 0 text2 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__end_of_PMD_Initialize CA8 0 CODE 0 text5 dist/default/production\Sensor_de_temperatura_Junior.production.o
 EUSART1_Write@txData 70 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
+printf@new_line 73 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELA 1F38 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _ANSELB 1F43 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
@@ -348,10 +392,13 @@ _ANSELC 1F4E 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.prod
 _ANSELD 1F59 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _ANSELE 1F64 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Lmaintext 0 0 ABS 0 maintext -
+__end_of_printf_num F28 0 CODE 0 text1 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
+printf_num@centena 76 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
+printf_num@dezena 75 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-_PIN_MANAGER_Initialize ECA 0 CODE 0 text3 dist/default/production\Sensor_de_temperatura_Junior.production.o
+_PIN_MANAGER_Initialize D26 0 CODE 0 text6 dist/default/production\Sensor_de_temperatura_Junior.production.o
 start_initialization FFA 0 CODE 0 cinit dist/default/production\Sensor_de_temperatura_Junior.production.o
 _ODCONA 1F3A 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _ODCONB 1F45 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
@@ -363,12 +410,14 @@ __CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura
 _RB6PPS 1F1E 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _RC1REG 119 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _RC1STA 11D 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-__end_of_SYSTEM_Initialize EA8 0 CODE 0 text1 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__end_of_SYSTEM_Initialize D04 0 CODE 0 text4 dist/default/production\Sensor_de_temperatura_Junior.production.o
 _TX1REG 11A 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _TX1STA 11E 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
+printf_num@milhar 77 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
+__end_of_printf E5C 0 CODE 0 text2 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __size_of_EUSART1_Initialize 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\renah\AppData\Local\Temp\s5g0.o
-_EUSART1_Write E76 0 CODE 0 text7 dist/default/production\Sensor_de_temperatura_Junior.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\renah\AppData\Local\Temp\s4gs.o
+_EUSART1_Write CD2 0 CODE 0 text3 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -592,20 +641,26 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
+__pstringtext1 1000 0 STRCODE 0 stringtext1 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__pstringtext2 0 0 STRCODE 0 stringtext2 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_WDTCWS$WDTCWS_7 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __S0 800C 0 ABS 0 - -
-__S1 77 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __CFG_BBEN$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-_SYSTEM_Initialize E8E 0 CODE 0 text1 dist/default/production\Sensor_de_temperatura_Junior.production.o
+_SYSTEM_Initialize CEA 0 CODE 0 text4 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\renah\AppData\Local\Temp\s5g0.o
+__size_of_printf_num 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\renah\AppData\Local\Temp\s4gs.o
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
 __size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __size_of_EUSART1_Write 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-__end_of_PIN_MANAGER_Initialize F50 0 CODE 0 text3 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext10 D04 0 CODE 0 text10 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__end_of_PIN_MANAGER_Initialize DAC 0 CODE 0 text6 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -660,21 +715,23 @@ __Lbank60 0 0 BANK60 1 bank60 -
 __Lbank61 0 0 BANK61 1 bank61 -
 __Lbank62 0 0 BANK62 1 bank62 -
 __Lbank63 0 0 BANK63 1 bank63 -
-__pmaintext F50 0 CODE 0 maintext dist/default/production\Sensor_de_temperatura_Junior.production.o
+__pmaintext F28 0 CODE 0 maintext dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
+printf@string 71 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_RSTOSC$HFINT1 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_BBSIZE$BB512 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 1000E 0 CONFIG 0 config -
+_printf DAC 0 CODE 0 text2 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_WRTAPP$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-_EUSART1_Read EA8 0 CODE 0 text8 dist/default/production\Sensor_de_temperatura_Junior.production.o
-main@data 72 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
-stackhi 27EF 0 ABS 0 - C:\Users\renah\AppData\Local\Temp\s5g0.o
-stacklo 2000 0 ABS 0 - C:\Users\renah\AppData\Local\Temp\s5g0.o
-__end_of_EUSART1_Write E8E 0 CODE 0 text7 dist/default/production\Sensor_de_temperatura_Junior.production.o
+_EUSART1_Read D04 0 CODE 0 text10 dist/default/production\Sensor_de_temperatura_Junior.production.o
+main@data 79 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
+stackhi 27EF 0 ABS 0 - C:\Users\renah\AppData\Local\Temp\s4gs.o
+stacklo 2000 0 ABS 0 - C:\Users\renah\AppData\Local\Temp\s4gs.o
+__end_of_EUSART1_Write CEA 0 CODE 0 text3 dist/default/production\Sensor_de_temperatura_Junior.production.o
 _OSCCON1 88D 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _OSCCON3 88F 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _OSCSTAT 890 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
@@ -693,24 +750,29 @@ __CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.p
 end_of_initialization FFA 0 CODE 0 cinit dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Hintentry 4 0 CODE 0 intentry -
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
+__size_of_printf 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _TX1STAbits 11E 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _PPSLOCKbits 1E8F 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Lstrings 0 0 ABS 0 strings -
 __size_of_EUSART1_Read 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec -
+printf_num@unidade 74 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
 __size_of_EUSART1_is_rx_ready 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-__ptext1 E8E 0 CODE 0 text1 dist/default/production\Sensor_de_temperatura_Junior.production.o
-__ptext2 E3C 0 CODE 0 text2 dist/default/production\Sensor_de_temperatura_Junior.production.o
-__ptext3 ECA 0 CODE 0 text3 dist/default/production\Sensor_de_temperatura_Junior.production.o
-__ptext4 E4C 0 CODE 0 text4 dist/default/production\Sensor_de_temperatura_Junior.production.o
-__ptext5 E60 0 CODE 0 text5 dist/default/production\Sensor_de_temperatura_Junior.production.o
-__ptext6 E30 0 CODE 0 text6 dist/default/production\Sensor_de_temperatura_Junior.production.o
-__ptext7 E76 0 CODE 0 text7 dist/default/production\Sensor_de_temperatura_Junior.production.o
-__ptext8 EA8 0 CODE 0 text8 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext1 E5C 0 CODE 0 text1 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext2 DAC 0 CODE 0 text2 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext3 CD2 0 CODE 0 text3 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext4 CEA 0 CODE 0 text4 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext5 C98 0 CODE 0 text5 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext6 D26 0 CODE 0 text6 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext7 CA8 0 CODE 0 text7 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext8 CBC 0 CODE 0 text8 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__ptext9 C8C 0 CODE 0 text9 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_EUSART1_Read ECA 0 CODE 0 text8 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__end_of_EUSART1_Read D26 0 CODE 0 text10 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
 _SLRCONA 1F3B 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _SLRCONB 1F46 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _SLRCONC 1F51 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
@@ -724,7 +786,7 @@ __CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.
 _SP1BRGH 11C 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _SP1BRGL 11B 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
-_EUSART1_is_rx_ready E30 0 CODE 0 text6 dist/default/production\Sensor_de_temperatura_Junior.production.o
+_EUSART1_is_rx_ready C8C 0 CODE 0 text9 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
 __Hend_init 8 0 CODE 0 end_init -
 __end_of_main FFA 0 CODE 0 maintext dist/default/production\Sensor_de_temperatura_Junior.production.o
@@ -739,13 +801,14 @@ _TRISE 16 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.product
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-__end_of_EUSART1_Initialize E76 0 CODE 0 text5 dist/default/production\Sensor_de_temperatura_Junior.production.o
-__end_of_OSCILLATOR_Initialize E60 0 CODE 0 text4 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__end_of_EUSART1_Initialize CD2 0 CODE 0 text8 dist/default/production\Sensor_de_temperatura_Junior.production.o
+__end_of_OSCILLATOR_Initialize CBC 0 CODE 0 text7 dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 __initialization FFA 0 CODE 0 cinit dist/default/production\Sensor_de_temperatura_Junior.production.o
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
 _PPSLOCK 1E8F 0 ABS 0 - dist/default/production\Sensor_de_temperatura_Junior.production.o
-_OSCILLATOR_Initialize E4C 0 CODE 0 text4 dist/default/production\Sensor_de_temperatura_Junior.production.o
+printf_num@dado 71 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_de_temperatura_Junior.production.o
+_OSCILLATOR_Initialize CA8 0 CODE 0 text7 dist/default/production\Sensor_de_temperatura_Junior.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -772,15 +835,18 @@ _OSCILLATOR_Initialize E4C 0 CODE 0 text4 dist/default/production\Sensor_de_temp
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FD FFA 3 2
-text1 0 747 E8E D 2
-text2 0 71E E3C 8 2
-text3 0 765 ECA 43 2
-text4 0 726 E4C A 2
-text5 0 730 E60 B 2
-text6 0 718 E30 6 2
-text7 0 73B E76 C 2
-text8 0 754 EA8 11 2
-maintext 0 7A8 F50 55 2
-cstackCOMMON 1 70 70 7 1
+text1 0 72E E5C 66 2
+text2 0 6D6 DAC 58 2
+text3 0 669 CD2 C 2
+text4 0 675 CEA D 2
+text5 0 64C C98 8 2
+text6 0 693 D26 43 2
+text7 0 654 CA8 A 2
+text8 0 65E CBC B 2
+text9 0 646 C8C 6 2
+text10 0 682 D04 11 2
+maintext 0 794 F28 69 2
+cstackCOMMON 1 70 70 E 1
+stringtext1 0 800 1000 A 2
 reset_vec 0 0 0 4 2
 config 0 8007 1000E 5 2
