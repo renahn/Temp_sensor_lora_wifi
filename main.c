@@ -70,11 +70,20 @@ void main(void)
     //INTERRUPT_PeripheralInterruptDisable();
 
     uint32_t i;
+    uint8_t data;
     
     while (1)
     {
         for(i=0;i<40000;i++);
         LED ^= 1;
+        EUSART1_Write('E');
+        
+        if(EUSART1_is_rx_ready())
+        {
+            data = EUSART1_Read();
+            EUSART1_Write(data);
+            EUSART1_Write('H');
+        } 
     }
 }
 /**

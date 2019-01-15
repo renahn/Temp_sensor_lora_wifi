@@ -13217,9 +13217,9 @@ extern __bank0 __bit __timeout;
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 92 "./mcc_generated_files/pin_manager.h"
+# 116 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 104 "./mcc_generated_files/pin_manager.h"
+# 128 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -13298,11 +13298,26 @@ typedef uint32_t uint_fast32_t;
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdbool.h" 1 3
 # 53 "./mcc_generated_files/mcc.h" 2
-# 68 "./mcc_generated_files/mcc.h"
+
+# 1 "./mcc_generated_files/eusart1.h" 1
+# 97 "./mcc_generated_files/eusart1.h"
+void EUSART1_Initialize(void);
+# 145 "./mcc_generated_files/eusart1.h"
+_Bool EUSART1_is_tx_ready(void);
+# 193 "./mcc_generated_files/eusart1.h"
+_Bool EUSART1_is_rx_ready(void);
+# 240 "./mcc_generated_files/eusart1.h"
+_Bool EUSART1_is_tx_done(void);
+# 260 "./mcc_generated_files/eusart1.h"
+uint8_t EUSART1_Read(void);
+# 280 "./mcc_generated_files/eusart1.h"
+void EUSART1_Write(uint8_t txData);
+# 54 "./mcc_generated_files/mcc.h" 2
+# 69 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 81 "./mcc_generated_files/mcc.h"
+# 82 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 94 "./mcc_generated_files/mcc.h"
+# 95 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 44 "main.c" 2
 
@@ -13319,10 +13334,19 @@ void main(void)
     SYSTEM_Initialize();
 # 72 "main.c"
     uint32_t i;
+    uint8_t data;
 
     while (1)
     {
         for(i=0;i<40000;i++);
         LATC5 ^= 1;
+        EUSART1_Write('E');
+
+        if(EUSART1_is_rx_ready())
+        {
+            data = EUSART1_Read();
+            EUSART1_Write(data);
+            EUSART1_Write('H');
+        }
     }
 }
