@@ -59,25 +59,65 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
-// get/set IO_RC5 aliases
-#define IO_RC5_TRIS                 TRISCbits.TRISC5
-#define IO_RC5_LAT                  LATCbits.LATC5
-#define IO_RC5_PORT                 PORTCbits.RC5
-#define IO_RC5_WPU                  WPUCbits.WPUC5
-#define IO_RC5_OD                   ODCONCbits.ODCC5
-#define IO_RC5_ANS                  ANSELCbits.ANSC5
-#define IO_RC5_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
-#define IO_RC5_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
-#define IO_RC5_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
-#define IO_RC5_GetValue()           PORTCbits.RC5
-#define IO_RC5_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
-#define IO_RC5_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
-#define IO_RC5_SetPullup()          do { WPUCbits.WPUC5 = 1; } while(0)
-#define IO_RC5_ResetPullup()        do { WPUCbits.WPUC5 = 0; } while(0)
-#define IO_RC5_SetPushPull()        do { ODCONCbits.ODCC5 = 0; } while(0)
-#define IO_RC5_SetOpenDrain()       do { ODCONCbits.ODCC5 = 1; } while(0)
-#define IO_RC5_SetAnalogMode()      do { ANSELCbits.ANSC5 = 1; } while(0)
-#define IO_RC5_SetDigitalMode()     do { ANSELCbits.ANSC5 = 0; } while(0)
+// get/set SCK1 aliases
+#define SCK1_TRIS                 TRISCbits.TRISC3
+#define SCK1_LAT                  LATCbits.LATC3
+#define SCK1_PORT                 PORTCbits.RC3
+#define SCK1_WPU                  WPUCbits.WPUC3
+#define SCK1_OD                   ODCONCbits.ODCC3
+#define SCK1_ANS                  ANSELCbits.ANSC3
+#define SCK1_SetHigh()            do { LATCbits.LATC3 = 1; } while(0)
+#define SCK1_SetLow()             do { LATCbits.LATC3 = 0; } while(0)
+#define SCK1_Toggle()             do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0)
+#define SCK1_GetValue()           PORTCbits.RC3
+#define SCK1_SetDigitalInput()    do { TRISCbits.TRISC3 = 1; } while(0)
+#define SCK1_SetDigitalOutput()   do { TRISCbits.TRISC3 = 0; } while(0)
+#define SCK1_SetPullup()          do { WPUCbits.WPUC3 = 1; } while(0)
+#define SCK1_ResetPullup()        do { WPUCbits.WPUC3 = 0; } while(0)
+#define SCK1_SetPushPull()        do { ODCONCbits.ODCC3 = 0; } while(0)
+#define SCK1_SetOpenDrain()       do { ODCONCbits.ODCC3 = 1; } while(0)
+#define SCK1_SetAnalogMode()      do { ANSELCbits.ANSC3 = 1; } while(0)
+#define SCK1_SetDigitalMode()     do { ANSELCbits.ANSC3 = 0; } while(0)
+
+// get/set SDI1 aliases
+#define SDI1_TRIS                 TRISCbits.TRISC4
+#define SDI1_LAT                  LATCbits.LATC4
+#define SDI1_PORT                 PORTCbits.RC4
+#define SDI1_WPU                  WPUCbits.WPUC4
+#define SDI1_OD                   ODCONCbits.ODCC4
+#define SDI1_ANS                  ANSELCbits.ANSC4
+#define SDI1_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
+#define SDI1_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
+#define SDI1_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
+#define SDI1_GetValue()           PORTCbits.RC4
+#define SDI1_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
+#define SDI1_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
+#define SDI1_SetPullup()          do { WPUCbits.WPUC4 = 1; } while(0)
+#define SDI1_ResetPullup()        do { WPUCbits.WPUC4 = 0; } while(0)
+#define SDI1_SetPushPull()        do { ODCONCbits.ODCC4 = 0; } while(0)
+#define SDI1_SetOpenDrain()       do { ODCONCbits.ODCC4 = 1; } while(0)
+#define SDI1_SetAnalogMode()      do { ANSELCbits.ANSC4 = 1; } while(0)
+#define SDI1_SetDigitalMode()     do { ANSELCbits.ANSC4 = 0; } while(0)
+
+// get/set SDO1 aliases
+#define SDO1_TRIS                 TRISCbits.TRISC5
+#define SDO1_LAT                  LATCbits.LATC5
+#define SDO1_PORT                 PORTCbits.RC5
+#define SDO1_WPU                  WPUCbits.WPUC5
+#define SDO1_OD                   ODCONCbits.ODCC5
+#define SDO1_ANS                  ANSELCbits.ANSC5
+#define SDO1_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
+#define SDO1_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
+#define SDO1_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
+#define SDO1_GetValue()           PORTCbits.RC5
+#define SDO1_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
+#define SDO1_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
+#define SDO1_SetPullup()          do { WPUCbits.WPUC5 = 1; } while(0)
+#define SDO1_ResetPullup()        do { WPUCbits.WPUC5 = 0; } while(0)
+#define SDO1_SetPushPull()        do { ODCONCbits.ODCC5 = 0; } while(0)
+#define SDO1_SetOpenDrain()       do { ODCONCbits.ODCC5 = 1; } while(0)
+#define SDO1_SetAnalogMode()      do { ANSELCbits.ANSC5 = 1; } while(0)
+#define SDO1_SetDigitalMode()     do { ANSELCbits.ANSC5 = 0; } while(0)
 
 // get/set RC6 procedures
 #define RC6_SetHigh()            do { LATCbits.LATC6 = 1; } while(0)
@@ -102,6 +142,26 @@
 #define RC7_ResetPullup()           do { WPUCbits.WPUC7 = 0; } while(0)
 #define RC7_SetAnalogMode()         do { ANSELCbits.ANSC7 = 1; } while(0)
 #define RC7_SetDigitalMode()        do { ANSELCbits.ANSC7 = 0; } while(0)
+
+// get/set IO_RD0 aliases
+#define IO_RD0_TRIS                 TRISDbits.TRISD0
+#define IO_RD0_LAT                  LATDbits.LATD0
+#define IO_RD0_PORT                 PORTDbits.RD0
+#define IO_RD0_WPU                  WPUDbits.WPUD0
+#define IO_RD0_OD                   ODCONDbits.ODCD0
+#define IO_RD0_ANS                  ANSELDbits.ANSD0
+#define IO_RD0_SetHigh()            do { LATDbits.LATD0 = 1; } while(0)
+#define IO_RD0_SetLow()             do { LATDbits.LATD0 = 0; } while(0)
+#define IO_RD0_Toggle()             do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0)
+#define IO_RD0_GetValue()           PORTDbits.RD0
+#define IO_RD0_SetDigitalInput()    do { TRISDbits.TRISD0 = 1; } while(0)
+#define IO_RD0_SetDigitalOutput()   do { TRISDbits.TRISD0 = 0; } while(0)
+#define IO_RD0_SetPullup()          do { WPUDbits.WPUD0 = 1; } while(0)
+#define IO_RD0_ResetPullup()        do { WPUDbits.WPUD0 = 0; } while(0)
+#define IO_RD0_SetPushPull()        do { ODCONDbits.ODCD0 = 0; } while(0)
+#define IO_RD0_SetOpenDrain()       do { ODCONDbits.ODCD0 = 1; } while(0)
+#define IO_RD0_SetAnalogMode()      do { ANSELDbits.ANSD0 = 1; } while(0)
+#define IO_RD0_SetDigitalMode()     do { ANSELDbits.ANSD0 = 0; } while(0)
 
 /**
    @Param

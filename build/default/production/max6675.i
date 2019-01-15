@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/mcc.c"
+# 1 "max6675.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,15 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/mcc.c" 2
-# 47 "mcc_generated_files/mcc.c"
-# 1 "mcc_generated_files/mcc.h" 1
-# 49 "mcc_generated_files/mcc.h"
+# 1 "max6675.c" 2
+
+
+
+
+
+
+
+
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -13211,17 +13216,12 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 2 3
-# 49 "mcc_generated_files/mcc.h" 2
+# 9 "max6675.c" 2
 
-# 1 "mcc_generated_files/device_config.h" 1
-# 50 "mcc_generated_files/mcc.h" 2
+# 1 "./max6675.h" 1
 
-# 1 "mcc_generated_files/pin_manager.h" 1
-# 116 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 128 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 51 "mcc_generated_files/mcc.h" 2
+
+
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdint.h" 3
@@ -13294,71 +13294,76 @@ typedef int32_t int_fast32_t;
 typedef uint32_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 131 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "mcc_generated_files/mcc.h" 2
+# 5 "./max6675.h" 2
 
+
+void max6675_power_on(void);
+void max6675_power_off(void);
+uint16_t max6675_get_temp(void);
+# 10 "max6675.c" 2
+
+# 1 "./mcc_generated_files/spi1.h" 1
+# 54 "./mcc_generated_files/spi1.h"
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "mcc_generated_files/mcc.h" 2
+# 54 "./mcc_generated_files/spi1.h" 2
 
-# 1 "mcc_generated_files/eusart1.h" 1
-# 97 "mcc_generated_files/eusart1.h"
-void EUSART1_Initialize(void);
-# 145 "mcc_generated_files/eusart1.h"
-_Bool EUSART1_is_tx_ready(void);
-# 193 "mcc_generated_files/eusart1.h"
-_Bool EUSART1_is_rx_ready(void);
-# 240 "mcc_generated_files/eusart1.h"
-_Bool EUSART1_is_tx_done(void);
-# 260 "mcc_generated_files/eusart1.h"
-uint8_t EUSART1_Read(void);
-# 280 "mcc_generated_files/eusart1.h"
-void EUSART1_Write(uint8_t txData);
-# 54 "mcc_generated_files/mcc.h" 2
-# 69 "mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 82 "mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 95 "mcc_generated_files/mcc.h"
-void PMD_Initialize(void);
-# 47 "mcc_generated_files/mcc.c" 2
-
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stddef.h" 1 3
+# 19 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stddef.h" 3
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 140 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long ptrdiff_t;
+# 19 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stddef.h" 2 3
+# 55 "./mcc_generated_files/spi1.h" 2
+# 117 "./mcc_generated_files/spi1.h"
+void SPI1_Initialize(void);
+# 152 "./mcc_generated_files/spi1.h"
+uint8_t SPI1_Exchange8bit(uint8_t data);
+# 192 "./mcc_generated_files/spi1.h"
+uint8_t SPI1_Exchange8bitBuffer(uint8_t *dataIn, uint8_t bufLen, uint8_t *dataOut);
+# 215 "./mcc_generated_files/spi1.h"
+_Bool SPI1_IsBufferFull(void);
+# 240 "./mcc_generated_files/spi1.h"
+_Bool SPI1_HasWriteCollisionOccured(void);
+# 264 "./mcc_generated_files/spi1.h"
+void SPI1_ClearWriteCollisionStatus(void);
+# 11 "max6675.c" 2
 
 
-void SYSTEM_Initialize(void)
+
+
+
+void max6675_power_on(void)
 {
-    PMD_Initialize();
-    PIN_MANAGER_Initialize();
-    OSCILLATOR_Initialize();
-    EUSART1_Initialize();
+    LATD0 = 1;
+    LATD1 = 1;
 }
 
-void OSCILLATOR_Initialize(void)
+
+void max6675_power_off(void)
 {
-
-    OSCCON1 = 0x60;
-
-    OSCCON3 = 0x00;
-
-    OSCEN = 0x00;
-
-    OSCFRQ = 0x06;
-
-    OSCSTAT = 0x00;
-
-    OSCTUNE = 0x00;
+    LATD0 = 0;
+    LATD1 = 0;
 }
 
-void PMD_Initialize(void)
+
+uint16_t max6675_get_temp(void)
 {
+    uint8_t data, data1;
+    uint16_t adc;
+    float temp;
 
-    PMD0 = 0x00;
+    LATD0 = 0;
+    data1 = SPI1_Exchange8bit(0x00);
+    data = SPI1_Exchange8bit(0x00);
+    LATD0 = 1;
 
-    PMD1 = 0x00;
+    adc = data1;
+    adc <<= 5;
+    adc |= (data>>3);
 
-    PMD2 = 0x00;
+    temp = adc;
+    temp *= 1023.75;
+    temp /= 4095;
 
-    PMD3 = 0x00;
-
-    PMD4 = 0x00;
-
-    PMD5 = 0x00;
+    return (uint16_t)temp;
 }

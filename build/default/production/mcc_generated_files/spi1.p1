@@ -1,126 +1,102 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"1266 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 1266: extern volatile unsigned char LATE __attribute__((address(0x01C)));
-[v _LATE `Vuc ~T0 @X0 0 e@28 ]
-"1204
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 1204: extern volatile unsigned char LATD __attribute__((address(0x01B)));
-[v _LATD `Vuc ~T0 @X0 0 e@27 ]
-"1018
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 1018: extern volatile unsigned char LATA __attribute__((address(0x018)));
-[v _LATA `Vuc ~T0 @X0 0 e@24 ]
-"1080
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 1080: extern volatile unsigned char LATB __attribute__((address(0x019)));
-[v _LATB `Vuc ~T0 @X0 0 e@25 ]
-"1142
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 1142: extern volatile unsigned char LATC __attribute__((address(0x01A)));
-[v _LATC `Vuc ~T0 @X0 0 e@26 ]
-"980
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 980: extern volatile unsigned char TRISE __attribute__((address(0x016)));
-[v _TRISE `Vuc ~T0 @X0 0 e@22 ]
-"732
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 732: extern volatile unsigned char TRISA __attribute__((address(0x012)));
-[v _TRISA `Vuc ~T0 @X0 0 e@18 ]
-"794
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 794: extern volatile unsigned char TRISB __attribute__((address(0x013)));
-[v _TRISB `Vuc ~T0 @X0 0 e@19 ]
-"856
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 856: extern volatile unsigned char TRISC __attribute__((address(0x014)));
-[v _TRISC `Vuc ~T0 @X0 0 e@20 ]
-"918
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 918: extern volatile unsigned char TRISD __attribute__((address(0x015)));
-[v _TRISD `Vuc ~T0 @X0 0 e@21 ]
-"21746
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 21746: extern volatile unsigned char ANSELD __attribute__((address(0x1F59)));
-[v _ANSELD `Vuc ~T0 @X0 0 e@8025 ]
-"21250
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 21250: extern volatile unsigned char ANSELC __attribute__((address(0x1F4E)));
-[v _ANSELC `Vuc ~T0 @X0 0 e@8014 ]
-"20754
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 20754: extern volatile unsigned char ANSELB __attribute__((address(0x1F43)));
-[v _ANSELB `Vuc ~T0 @X0 0 e@8003 ]
-"22056
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 22056: extern volatile unsigned char ANSELE __attribute__((address(0x1F64)));
-[v _ANSELE `Vuc ~T0 @X0 0 e@8036 ]
-"20258
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 20258: extern volatile unsigned char ANSELA __attribute__((address(0x1F38)));
-[v _ANSELA `Vuc ~T0 @X0 0 e@7992 ]
-"21808
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 21808: extern volatile unsigned char WPUD __attribute__((address(0x1F5A)));
-[v _WPUD `Vuc ~T0 @X0 0 e@8026 ]
-"22088
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 22088: extern volatile unsigned char WPUE __attribute__((address(0x1F65)));
-[v _WPUE `Vuc ~T0 @X0 0 e@8037 ]
-"20816
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 20816: extern volatile unsigned char WPUB __attribute__((address(0x1F44)));
-[v _WPUB `Vuc ~T0 @X0 0 e@8004 ]
-"20320
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 20320: extern volatile unsigned char WPUA __attribute__((address(0x1F39)));
-[v _WPUA `Vuc ~T0 @X0 0 e@7993 ]
-"21312
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 21312: extern volatile unsigned char WPUC __attribute__((address(0x1F4F)));
-[v _WPUC `Vuc ~T0 @X0 0 e@8015 ]
-"22126
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 22126: extern volatile unsigned char ODCONE __attribute__((address(0x1F66)));
-[v _ODCONE `Vuc ~T0 @X0 0 e@8038 ]
-"20382
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 20382: extern volatile unsigned char ODCONA __attribute__((address(0x1F3A)));
-[v _ODCONA `Vuc ~T0 @X0 0 e@7994 ]
-"20878
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 20878: extern volatile unsigned char ODCONB __attribute__((address(0x1F45)));
-[v _ODCONB `Vuc ~T0 @X0 0 e@8005 ]
-"21374
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 21374: extern volatile unsigned char ODCONC __attribute__((address(0x1F50)));
-[v _ODCONC `Vuc ~T0 @X0 0 e@8016 ]
-"21870
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 21870: extern volatile unsigned char ODCOND __attribute__((address(0x1F5B)));
-[v _ODCOND `Vuc ~T0 @X0 0 e@8027 ]
-"20444
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 20444: extern volatile unsigned char SLRCONA __attribute__((address(0x1F3B)));
-[v _SLRCONA `Vuc ~T0 @X0 0 e@7995 ]
-"20940
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 20940: extern volatile unsigned char SLRCONB __attribute__((address(0x1F46)));
-[v _SLRCONB `Vuc ~T0 @X0 0 e@8006 ]
-"21436
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 21436: extern volatile unsigned char SLRCONC __attribute__((address(0x1F51)));
-[v _SLRCONC `Vuc ~T0 @X0 0 e@8017 ]
-"21932
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 21932: extern volatile unsigned char SLRCOND __attribute__((address(0x1F5C)));
-[v _SLRCOND `Vuc ~T0 @X0 0 e@8028 ]
-"22158
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 22158: extern volatile unsigned char SLRCONE __attribute__((address(0x1F67)));
-[v _SLRCONE `Vuc ~T0 @X0 0 e@8039 ]
-"17364
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 17364: extern volatile unsigned char PPSLOCK __attribute__((address(0x1E8F)));
-[v _PPSLOCK `Vuc ~T0 @X0 0 e@7823 ]
-"17370
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 17370:     struct {
-[s S788 :1 `uc 1 ]
-[n S788 . PPSLOCKED ]
-"17369
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 17369: typedef union {
-[u S787 `S788 1 ]
-[n S787 . . ]
-"17374
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 17374: extern volatile PPSLOCKbits_t PPSLOCKbits __attribute__((address(0x1E8F)));
-[v _PPSLOCKbits `VS787 ~T0 @X0 0 e@7823 ]
-"19334
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 19334: extern volatile unsigned char RB6PPS __attribute__((address(0x1F1E)));
-[v _RB6PPS `Vuc ~T0 @X0 0 e@7966 ]
-"18492
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 18492:     struct {
-[s S847 :6 `uc 1 ]
-[n S847 . RX1DTPPS ]
-"18495
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 18495:     struct {
-[s S848 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S848 . RX1DTPPS0 RX1DTPPS1 RX1DTPPS2 RX1DTPPS3 RX1DTPPS4 RX1DTPPS5 ]
-"18491
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 18491: typedef union {
-[u S846 `S847 1 `S848 1 ]
-[n S846 . . . ]
-"18504
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 18504: extern volatile RX1DTPPSbits_t RX1DTPPSbits __attribute__((address(0x1ECB)));
-[v _RX1DTPPSbits `VS846 ~T0 @X0 0 e@7883 ]
+"2695 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2695: extern volatile unsigned char SSP1STAT __attribute__((address(0x18F)));
+[v _SSP1STAT `Vuc ~T0 @X0 0 e@399 ]
+"3059
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 3059: extern volatile unsigned char SSP1CON1 __attribute__((address(0x190)));
+[v _SSP1CON1 `Vuc ~T0 @X0 0 e@400 ]
+"2505
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2505: extern volatile unsigned char SSP1ADD __attribute__((address(0x18D)));
+[v _SSP1ADD `Vuc ~T0 @X0 0 e@397 ]
+"3065
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 3065:     struct {
+[s S151 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S151 . SSPM CKP SSPEN SSPOV WCOL ]
+"3072
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 3072:     struct {
+[s S152 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S152 . SSPM0 SSPM1 SSPM2 SSPM3 ]
+"3078
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 3078:     struct {
+[s S153 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S153 . SSPM01 SSPM11 SSPM21 SSPM31 CKP1 SSPEN1 SSPOV1 WCOL1 ]
+"3064
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 3064: typedef union {
+[u S150 `S151 1 `S152 1 `S153 1 ]
+[n S150 . . . . ]
+"3089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 3089: extern volatile SSP1CON1bits_t SSP1CON1bits __attribute__((address(0x190)));
+[v _SSP1CON1bits `VS150 ~T0 @X0 0 e@400 ]
+"2485
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2485: extern volatile unsigned char SSP1BUF __attribute__((address(0x18C)));
+[v _SSP1BUF `Vuc ~T0 @X0 0 e@396 ]
+"2701
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2701:     struct {
+[s S135 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S135 . BF UA R_nW S P D_nA CKE SMP ]
+"2711
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2711:     struct {
+[s S136 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S136 . . R_W . D_A ]
+"2717
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2717:     struct {
+[s S137 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S137 . . nW . nA ]
+"2723
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2723:     struct {
+[s S138 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S138 . . nWRITE . nADDRESS ]
+"2729
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2729:     struct {
+[s S139 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S139 . . READ_WRITE . DATA_ADDRESS ]
+"2735
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2735:     struct {
+[s S140 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S140 . . I2C_READ I2C_START I2C_STOP I2C_DAT ]
+"2742
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2742:     struct {
+[s S141 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S141 . BF1 UA1 R START STOP D CKE1 SMP1 ]
+"2752
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2752:     struct {
+[s S142 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S142 . . RW START1 STOP1 DA ]
+"2759
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2759:     struct {
+[s S143 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S143 . . RW1 I2C_START1 I2C_STOP2 DA1 ]
+"2766
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2766:     struct {
+[s S144 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S144 . . I2C_READ1 S2 P2 DATA_ADDRESS1 ]
+"2773
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2773:     struct {
+[s S145 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S145 . . READ_WRITE1 . D_A1 ]
+"2779
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2779:     struct {
+[s S146 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S146 . . R_W1 . D_nA1 ]
+"2785
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2785:     struct {
+[s S147 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S147 . . R_nW1 . I2C_DAT1 ]
+"2791
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2791:     struct {
+[s S148 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S148 . . nW2 . nA2 ]
+"2797
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2797:     struct {
+[s S149 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S149 . . nWRITE1 . nADDRESS1 ]
+"2700
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2700: typedef union {
+[u S134 `S135 1 `S136 1 `S137 1 `S138 1 `S139 1 `S140 1 `S141 1 `S142 1 `S143 1 `S144 1 `S145 1 `S146 1 `S147 1 `S148 1 `S149 1 ]
+[n S134 . . . . . . . . . . . . . . . . ]
+"2804
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 2804: extern volatile SSP1STATbits_t SSP1STATbits __attribute__((address(0x18F)));
+[v _SSP1STATbits `VS134 ~T0 @X0 0 e@399 ]
 "110 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 110: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1228,141 +1204,245 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22574
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 22574: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"57 mcc_generated_files/pin_manager.c
-[; ;mcc_generated_files/pin_manager.c: 57: void PIN_MANAGER_Initialize(void)
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
-"58
-[; ;mcc_generated_files/pin_manager.c: 58: {
-{
-[e :U _PIN_MANAGER_Initialize ]
-[f ]
-"62
-[; ;mcc_generated_files/pin_manager.c: 62:     LATE = 0x00;
-[e = _LATE -> -> 0 `i `uc ]
-"63
-[; ;mcc_generated_files/pin_manager.c: 63:     LATD = 0x00;
-[e = _LATD -> -> 0 `i `uc ]
-"64
-[; ;mcc_generated_files/pin_manager.c: 64:     LATA = 0x00;
-[e = _LATA -> -> 0 `i `uc ]
-"65
-[; ;mcc_generated_files/pin_manager.c: 65:     LATB = 0x00;
-[e = _LATB -> -> 0 `i `uc ]
+"65 mcc_generated_files/spi1.c
+[; ;mcc_generated_files/spi1.c: 65: void SPI1_Initialize(void)
+[v _SPI1_Initialize `(v ~T0 @X0 1 ef ]
 "66
-[; ;mcc_generated_files/pin_manager.c: 66:     LATC = 0x00;
-[e = _LATC -> -> 0 `i `uc ]
-"71
-[; ;mcc_generated_files/pin_manager.c: 71:     TRISE = 0x0F;
-[e = _TRISE -> -> 15 `i `uc ]
-"72
-[; ;mcc_generated_files/pin_manager.c: 72:     TRISA = 0xFF;
-[e = _TRISA -> -> 255 `i `uc ]
+[; ;mcc_generated_files/spi1.c: 66: {
+{
+[e :U _SPI1_Initialize ]
+[f ]
+"70
+[; ;mcc_generated_files/spi1.c: 70:     SSP1STAT = 0x00;
+[e = _SSP1STAT -> -> 0 `i `uc ]
 "73
-[; ;mcc_generated_files/pin_manager.c: 73:     TRISB = 0xFF;
-[e = _TRISB -> -> 255 `i `uc ]
-"74
-[; ;mcc_generated_files/pin_manager.c: 74:     TRISC = 0x9F;
-[e = _TRISC -> -> 159 `i `uc ]
-"75
-[; ;mcc_generated_files/pin_manager.c: 75:     TRISD = 0xFF;
-[e = _TRISD -> -> 255 `i `uc ]
-"80
-[; ;mcc_generated_files/pin_manager.c: 80:     ANSELD = 0xFF;
-[e = _ANSELD -> -> 255 `i `uc ]
-"81
-[; ;mcc_generated_files/pin_manager.c: 81:     ANSELC = 0x5F;
-[e = _ANSELC -> -> 95 `i `uc ]
-"82
-[; ;mcc_generated_files/pin_manager.c: 82:     ANSELB = 0xFF;
-[e = _ANSELB -> -> 255 `i `uc ]
-"83
-[; ;mcc_generated_files/pin_manager.c: 83:     ANSELE = 0x07;
-[e = _ANSELE -> -> 7 `i `uc ]
-"84
-[; ;mcc_generated_files/pin_manager.c: 84:     ANSELA = 0xFF;
-[e = _ANSELA -> -> 255 `i `uc ]
-"89
-[; ;mcc_generated_files/pin_manager.c: 89:     WPUD = 0x00;
-[e = _WPUD -> -> 0 `i `uc ]
-"90
-[; ;mcc_generated_files/pin_manager.c: 90:     WPUE = 0x00;
-[e = _WPUE -> -> 0 `i `uc ]
-"91
-[; ;mcc_generated_files/pin_manager.c: 91:     WPUB = 0x00;
-[e = _WPUB -> -> 0 `i `uc ]
-"92
-[; ;mcc_generated_files/pin_manager.c: 92:     WPUA = 0x00;
-[e = _WPUA -> -> 0 `i `uc ]
-"93
-[; ;mcc_generated_files/pin_manager.c: 93:     WPUC = 0x00;
-[e = _WPUC -> -> 0 `i `uc ]
-"98
-[; ;mcc_generated_files/pin_manager.c: 98:     ODCONE = 0x00;
-[e = _ODCONE -> -> 0 `i `uc ]
-"99
-[; ;mcc_generated_files/pin_manager.c: 99:     ODCONA = 0x00;
-[e = _ODCONA -> -> 0 `i `uc ]
-"100
-[; ;mcc_generated_files/pin_manager.c: 100:     ODCONB = 0x00;
-[e = _ODCONB -> -> 0 `i `uc ]
-"101
-[; ;mcc_generated_files/pin_manager.c: 101:     ODCONC = 0x00;
-[e = _ODCONC -> -> 0 `i `uc ]
-"102
-[; ;mcc_generated_files/pin_manager.c: 102:     ODCOND = 0x00;
-[e = _ODCOND -> -> 0 `i `uc ]
-"107
-[; ;mcc_generated_files/pin_manager.c: 107:     SLRCONA = 0xFF;
-[e = _SLRCONA -> -> 255 `i `uc ]
-"108
-[; ;mcc_generated_files/pin_manager.c: 108:     SLRCONB = 0xFF;
-[e = _SLRCONB -> -> 255 `i `uc ]
-"109
-[; ;mcc_generated_files/pin_manager.c: 109:     SLRCONC = 0xFF;
-[e = _SLRCONC -> -> 255 `i `uc ]
-"110
-[; ;mcc_generated_files/pin_manager.c: 110:     SLRCOND = 0xFF;
-[e = _SLRCOND -> -> 255 `i `uc ]
-"111
-[; ;mcc_generated_files/pin_manager.c: 111:     SLRCONE = 0x07;
-[e = _SLRCONE -> -> 7 `i `uc ]
-"114
-[; ;mcc_generated_files/pin_manager.c: 114:     PPSLOCK = 0x55;
-[e = _PPSLOCK -> -> 85 `i `uc ]
-"115
-[; ;mcc_generated_files/pin_manager.c: 115:     PPSLOCK = 0xAA;
-[e = _PPSLOCK -> -> 170 `i `uc ]
-"116
-[; ;mcc_generated_files/pin_manager.c: 116:     PPSLOCKbits.PPSLOCKED = 0x00;
-[e = . . _PPSLOCKbits 0 0 -> -> 0 `i `uc ]
-"118
-[; ;mcc_generated_files/pin_manager.c: 118:     RB6PPS = 0x0F;
-[e = _RB6PPS -> -> 15 `i `uc ]
-"119
-[; ;mcc_generated_files/pin_manager.c: 119:     RX1DTPPSbits.RX1DTPPS = 0x0F;
-[e = . . _RX1DTPPSbits 0 0 -> -> 15 `i `uc ]
-"121
-[; ;mcc_generated_files/pin_manager.c: 121:     PPSLOCK = 0x55;
-[e = _PPSLOCK -> -> 85 `i `uc ]
-"122
-[; ;mcc_generated_files/pin_manager.c: 122:     PPSLOCK = 0xAA;
-[e = _PPSLOCK -> -> 170 `i `uc ]
-"123
-[; ;mcc_generated_files/pin_manager.c: 123:     PPSLOCKbits.PPSLOCKED = 0x01;
-[e = . . _PPSLOCKbits 0 0 -> -> 1 `i `uc ]
-"129
-[; ;mcc_generated_files/pin_manager.c: 129: }
+[; ;mcc_generated_files/spi1.c: 73:     SSP1CON1 = 0x22;
+[e = _SSP1CON1 -> -> 34 `i `uc ]
+"76
+[; ;mcc_generated_files/spi1.c: 76:     SSP1ADD = 0x00;
+[e = _SSP1ADD -> -> 0 `i `uc ]
+"77
+[; ;mcc_generated_files/spi1.c: 77: }
 [e :UE 1026 ]
 }
-"131
-[; ;mcc_generated_files/pin_manager.c: 131: void PIN_MANAGER_IOC(void)
-[v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"132
-[; ;mcc_generated_files/pin_manager.c: 132: {
+"79
+[; ;mcc_generated_files/spi1.c: 79: uint8_t SPI1_Exchange8bit(uint8_t data)
+[v _SPI1_Exchange8bit `(uc ~T0 @X0 1 ef1`uc ]
+"80
+[; ;mcc_generated_files/spi1.c: 80: {
 {
-[e :U _PIN_MANAGER_IOC ]
+[e :U _SPI1_Exchange8bit ]
+"79
+[; ;mcc_generated_files/spi1.c: 79: uint8_t SPI1_Exchange8bit(uint8_t data)
+[v _data `uc ~T0 @X0 1 r1 ]
+"80
+[; ;mcc_generated_files/spi1.c: 80: {
 [f ]
-"133
-[; ;mcc_generated_files/pin_manager.c: 133: }
+"82
+[; ;mcc_generated_files/spi1.c: 82:     SSP1CON1bits.WCOL = 0;
+[e = . . _SSP1CON1bits 0 4 -> -> 0 `i `uc ]
+"84
+[; ;mcc_generated_files/spi1.c: 84:     SSP1BUF = data;
+[e = _SSP1BUF _data ]
+"86
+[; ;mcc_generated_files/spi1.c: 86:     while(SSP1STATbits.BF == 0x0)
+[e $U 1028  ]
+[e :U 1029 ]
+"87
+[; ;mcc_generated_files/spi1.c: 87:     {
+{
+"88
+[; ;mcc_generated_files/spi1.c: 88:     }
+}
+[e :U 1028 ]
+"86
+[; ;mcc_generated_files/spi1.c: 86:     while(SSP1STATbits.BF == 0x0)
+[e $ == -> . . _SSP1STATbits 0 0 `i -> 0 `i 1029  ]
+[e :U 1030 ]
+"90
+[; ;mcc_generated_files/spi1.c: 90:     return (SSP1BUF);
+[e ) _SSP1BUF ]
+[e $UE 1027  ]
+"91
+[; ;mcc_generated_files/spi1.c: 91: }
 [e :UE 1027 ]
+}
+"93
+[; ;mcc_generated_files/spi1.c: 93: uint8_t SPI1_Exchange8bitBuffer(uint8_t *dataIn, uint8_t bufLen, uint8_t *dataOut)
+[v _SPI1_Exchange8bitBuffer `(uc ~T0 @X0 1 ef3`*uc`uc`*uc ]
+"94
+[; ;mcc_generated_files/spi1.c: 94: {
+{
+[e :U _SPI1_Exchange8bitBuffer ]
+"93
+[; ;mcc_generated_files/spi1.c: 93: uint8_t SPI1_Exchange8bitBuffer(uint8_t *dataIn, uint8_t bufLen, uint8_t *dataOut)
+[v _dataIn `*uc ~T0 @X0 1 r1 ]
+[v _bufLen `uc ~T0 @X0 1 r2 ]
+[v _dataOut `*uc ~T0 @X0 1 r3 ]
+"94
+[; ;mcc_generated_files/spi1.c: 94: {
+[f ]
+"95
+[; ;mcc_generated_files/spi1.c: 95:     uint8_t bytesWritten = 0;
+[v _bytesWritten `uc ~T0 @X0 1 a ]
+[e = _bytesWritten -> -> 0 `i `uc ]
+"97
+[; ;mcc_generated_files/spi1.c: 97:     if(bufLen != 0)
+[e $ ! != -> _bufLen `i -> 0 `i 1032  ]
+"98
+[; ;mcc_generated_files/spi1.c: 98:     {
+{
+"99
+[; ;mcc_generated_files/spi1.c: 99:         if(dataIn != ((void*)0))
+[e $ ! != _dataIn -> -> -> 0 `i `*v `*uc 1033  ]
+"100
+[; ;mcc_generated_files/spi1.c: 100:         {
+{
+"101
+[; ;mcc_generated_files/spi1.c: 101:             while(bytesWritten < bufLen)
+[e $U 1034  ]
+[e :U 1035 ]
+"102
+[; ;mcc_generated_files/spi1.c: 102:             {
+{
+"103
+[; ;mcc_generated_files/spi1.c: 103:                 if(dataOut == ((void*)0))
+[e $ ! == _dataOut -> -> -> 0 `i `*v `*uc 1037  ]
+"104
+[; ;mcc_generated_files/spi1.c: 104:                 {
+{
+"105
+[; ;mcc_generated_files/spi1.c: 105:                     SPI1_Exchange8bit(dataIn[bytesWritten]);
+[e ( _SPI1_Exchange8bit (1 *U + _dataIn * -> _bytesWritten `ux -> -> # *U _dataIn `ui `ux ]
+"106
+[; ;mcc_generated_files/spi1.c: 106:                 }
+}
+[e $U 1038  ]
+"107
+[; ;mcc_generated_files/spi1.c: 107:                 else
+[e :U 1037 ]
+"108
+[; ;mcc_generated_files/spi1.c: 108:                 {
+{
+"109
+[; ;mcc_generated_files/spi1.c: 109:                     dataOut[bytesWritten] = SPI1_Exchange8bit(dataIn[bytesWritten]);
+[e = *U + _dataOut * -> _bytesWritten `ux -> -> # *U _dataOut `ui `ux ( _SPI1_Exchange8bit (1 *U + _dataIn * -> _bytesWritten `ux -> -> # *U _dataIn `ui `ux ]
+"110
+[; ;mcc_generated_files/spi1.c: 110:                 }
+}
+[e :U 1038 ]
+"112
+[; ;mcc_generated_files/spi1.c: 112:                 bytesWritten++;
+[e ++ _bytesWritten -> -> 1 `i `uc ]
+"113
+[; ;mcc_generated_files/spi1.c: 113:             }
+}
+[e :U 1034 ]
+"101
+[; ;mcc_generated_files/spi1.c: 101:             while(bytesWritten < bufLen)
+[e $ < -> _bytesWritten `i -> _bufLen `i 1035  ]
+[e :U 1036 ]
+"114
+[; ;mcc_generated_files/spi1.c: 114:         }
+}
+[e $U 1039  ]
+"115
+[; ;mcc_generated_files/spi1.c: 115:         else
+[e :U 1033 ]
+"116
+[; ;mcc_generated_files/spi1.c: 116:         {
+{
+"117
+[; ;mcc_generated_files/spi1.c: 117:             if(dataOut != ((void*)0))
+[e $ ! != _dataOut -> -> -> 0 `i `*v `*uc 1040  ]
+"118
+[; ;mcc_generated_files/spi1.c: 118:             {
+{
+"119
+[; ;mcc_generated_files/spi1.c: 119:                 while(bytesWritten < bufLen )
+[e $U 1041  ]
+[e :U 1042 ]
+"120
+[; ;mcc_generated_files/spi1.c: 120:                 {
+{
+"121
+[; ;mcc_generated_files/spi1.c: 121:                     dataOut[bytesWritten] = SPI1_Exchange8bit(0x0);
+[e = *U + _dataOut * -> _bytesWritten `ux -> -> # *U _dataOut `ui `ux ( _SPI1_Exchange8bit (1 -> -> 0 `i `uc ]
+"123
+[; ;mcc_generated_files/spi1.c: 123:                     bytesWritten++;
+[e ++ _bytesWritten -> -> 1 `i `uc ]
+"124
+[; ;mcc_generated_files/spi1.c: 124:                 }
+}
+[e :U 1041 ]
+"119
+[; ;mcc_generated_files/spi1.c: 119:                 while(bytesWritten < bufLen )
+[e $ < -> _bytesWritten `i -> _bufLen `i 1042  ]
+[e :U 1043 ]
+"125
+[; ;mcc_generated_files/spi1.c: 125:             }
+}
+[e :U 1040 ]
+"126
+[; ;mcc_generated_files/spi1.c: 126:         }
+}
+[e :U 1039 ]
+"127
+[; ;mcc_generated_files/spi1.c: 127:     }
+}
+[e :U 1032 ]
+"129
+[; ;mcc_generated_files/spi1.c: 129:     return bytesWritten;
+[e ) _bytesWritten ]
+[e $UE 1031  ]
+"130
+[; ;mcc_generated_files/spi1.c: 130: }
+[e :UE 1031 ]
+}
+"132
+[; ;mcc_generated_files/spi1.c: 132: _Bool SPI1_IsBufferFull(void)
+[v _SPI1_IsBufferFull `(a ~T0 @X0 1 ef ]
+"133
+[; ;mcc_generated_files/spi1.c: 133: {
+{
+[e :U _SPI1_IsBufferFull ]
+[f ]
+"134
+[; ;mcc_generated_files/spi1.c: 134:     return (SSP1STATbits.BF);
+[e ) -> . . _SSP1STATbits 0 0 `a ]
+[e $UE 1044  ]
+"135
+[; ;mcc_generated_files/spi1.c: 135: }
+[e :UE 1044 ]
+}
+"137
+[; ;mcc_generated_files/spi1.c: 137: _Bool SPI1_HasWriteCollisionOccured(void)
+[v _SPI1_HasWriteCollisionOccured `(a ~T0 @X0 1 ef ]
+"138
+[; ;mcc_generated_files/spi1.c: 138: {
+{
+[e :U _SPI1_HasWriteCollisionOccured ]
+[f ]
+"139
+[; ;mcc_generated_files/spi1.c: 139:     return (SSP1CON1bits.WCOL);
+[e ) -> . . _SSP1CON1bits 0 4 `a ]
+[e $UE 1045  ]
+"140
+[; ;mcc_generated_files/spi1.c: 140: }
+[e :UE 1045 ]
+}
+"142
+[; ;mcc_generated_files/spi1.c: 142: void SPI1_ClearWriteCollisionStatus(void)
+[v _SPI1_ClearWriteCollisionStatus `(v ~T0 @X0 1 ef ]
+"143
+[; ;mcc_generated_files/spi1.c: 143: {
+{
+[e :U _SPI1_ClearWriteCollisionStatus ]
+[f ]
+"144
+[; ;mcc_generated_files/spi1.c: 144:     SSP1CON1bits.WCOL = 0;
+[e = . . _SSP1CON1bits 0 4 -> -> 0 `i `uc ]
+"145
+[; ;mcc_generated_files/spi1.c: 145: }
+[e :UE 1046 ]
 }

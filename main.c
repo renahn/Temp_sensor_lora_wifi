@@ -43,12 +43,13 @@
 
 #include "mcc_generated_files/mcc.h"
 #include "app_uart.h"
+#include "max6675.h"
 
 /*
                          Main application
  */
 
-#define LED LATC5
+//#define LED LATC5
 
 
 
@@ -75,13 +76,18 @@ void main(void)
 
     uint32_t i;
     uint8_t data;
+    uint16_t temp;
+    
+    max6675_power_on();
     
     while (1)
     {
         for(i=0;i<40000;i++);
-        LED ^= 1;
-        printf("Renahn /n",0);
-        printf_num(543);
+        for(i=0;i<40000;i++);
+        
+        temp = max6675_get_temp();
+        printf("Temperatura /n",0);
+        printf_num(temp);
         printf("/n",1);
         
         if(EUSART1_is_rx_ready())
