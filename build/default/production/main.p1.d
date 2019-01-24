@@ -6,4 +6,5 @@ mcc_generated_files/pin_manager.h  \
 mcc_generated_files/spi1.h  \
 mcc_generated_files/eusart1.h  \
 app_uart.h  \
-max6675.h 
+max6675.h  \
+lora.h 

@@ -3,18 +3,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "70 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 70: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"7 ./max6675.h
-[; ;./max6675.h: 7: void max6675_power_on(void);
-[v _max6675_power_on `(v ~T0 @X0 0 ef ]
-"9
-[; ;./max6675.h: 9: uint16_t max6675_get_temp(void);
-[v _max6675_get_temp `(us ~T0 @X0 0 ef ]
-"7 ./app_uart.h
-[; ;./app_uart.h: 7: void printf(uint8_t string[30], uint8_t new_line);
-[v _printf `(v ~T0 @X0 0 ef2`*uc`uc ]
-"8
-[; ;./app_uart.h: 8: void printf_num(uint16_t dado);
-[v _printf_num `(v ~T0 @X0 0 ef1`us ]
+"24265 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 24265: extern volatile __bit LATD0 __attribute__((address(0xD8)));
+[v _LATD0 `Vb ~T0 @X0 0 e@216 ]
 "193 ./mcc_generated_files/eusart1.h
 [; ;./mcc_generated_files/eusart1.h: 193: _Bool EUSART1_is_rx_ready(void);
 [v _EUSART1_is_rx_ready `(a ~T0 @X0 0 ef ]
@@ -1132,37 +1123,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15376.h: 22574: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"57 main.c
-[; ;main.c: 57: void main(void)
+"8 main.c
+[; ;main.c: 8: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"58
-[; ;main.c: 58: {
+"9
+[; ;main.c: 9: {
 {
 [e :U _main ]
 [f ]
-"60
-[; ;main.c: 60:     SYSTEM_Initialize();
+"11
+[; ;main.c: 11:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"77
-[; ;main.c: 77:     uint32_t i;
+"28
+[; ;main.c: 28:     uint32_t i;
 [v _i `ul ~T0 @X0 1 a ]
-"78
-[; ;main.c: 78:     uint8_t data;
+"29
+[; ;main.c: 29:     uint8_t data;
 [v _data `uc ~T0 @X0 1 a ]
-"79
-[; ;main.c: 79:     uint16_t temp;
-[v _temp `us ~T0 @X0 1 a ]
-"81
-[; ;main.c: 81:     max6675_power_on();
-[e ( _max6675_power_on ..  ]
-"83
-[; ;main.c: 83:     while (1)
+"33
+[; ;main.c: 33:     while (1)
 [e :U 1028 ]
-"84
-[; ;main.c: 84:     {
+"34
+[; ;main.c: 34:     {
 {
-"85
-[; ;main.c: 85:         for(i=0;i<40000;i++);
+"35
+[; ;main.c: 35:         for(i=0;i<40000;i++);
 {
 [e = _i -> -> -> 0 `i `l `ul ]
 [e $ < _i -> -> 40000 `l `ul 1030  ]
@@ -1172,8 +1157,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ < _i -> -> 40000 `l `ul 1030  ]
 [e :U 1031 ]
 }
-"86
-[; ;main.c: 86:         for(i=0;i<40000;i++);
+"36
+[; ;main.c: 36:         for(i=0;i<40000;i++);
 {
 [e = _i -> -> -> 0 `i `l `ul ]
 [e $ < _i -> -> 40000 `l `ul 1033  ]
@@ -1183,46 +1168,35 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ < _i -> -> 40000 `l `ul 1033  ]
 [e :U 1034 ]
 }
-"88
-[; ;main.c: 88:         temp = max6675_get_temp();
-[e = _temp ( _max6675_get_temp ..  ]
-"89
-[; ;main.c: 89:         printf("Temperatura /n",0);
-[e ( _printf (2 , :s 1C -> -> 0 `i `uc ]
-"90
-[; ;main.c: 90:         printf_num(temp);
-[e ( _printf_num (1 _temp ]
-"91
-[; ;main.c: 91:         printf("/n",1);
-[e ( _printf (2 , :s 2C -> -> 1 `i `uc ]
-"93
-[; ;main.c: 93:         if(EUSART1_is_rx_ready())
+"40
+[; ;main.c: 40:         LATD0 ^= 1;
+[e =^ _LATD0 -> -> -> 1 `i `b `Vb ]
+"42
+[; ;main.c: 42:         if(EUSART1_is_rx_ready())
 [e $ ! != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1036  ]
-"94
-[; ;main.c: 94:         {
+"43
+[; ;main.c: 43:         {
 {
-"95
-[; ;main.c: 95:             data = EUSART1_Read();
+"44
+[; ;main.c: 44:             data = EUSART1_Read();
 [e = _data ( _EUSART1_Read ..  ]
-"96
-[; ;main.c: 96:             EUSART1_Write(data);
+"45
+[; ;main.c: 45:             EUSART1_Write(data);
 [e ( _EUSART1_Write (1 _data ]
-"97
-[; ;main.c: 97:             EUSART1_Write('H');
+"46
+[; ;main.c: 46:             EUSART1_Write('H');
 [e ( _EUSART1_Write (1 -> -> 72 `ui `uc ]
-"98
-[; ;main.c: 98:         }
+"47
+[; ;main.c: 47:         }
 }
 [e :U 1036 ]
-"99
-[; ;main.c: 99:     }
+"48
+[; ;main.c: 48:     }
 }
 [e :U 1027 ]
 [e $U 1028  ]
 [e :U 1029 ]
-"100
-[; ;main.c: 100: }
+"49
+[; ;main.c: 49: }
 [e :UE 1026 ]
 }
-[a 1C 84 101 109 112 101 114 97 116 117 114 97 32 47 110 0 ]
-[a 2C 47 110 0 ]

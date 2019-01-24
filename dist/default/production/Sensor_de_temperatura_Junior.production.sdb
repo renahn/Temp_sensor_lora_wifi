@@ -19,12 +19,14 @@
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 "10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"57 C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+"80 C:\Users\renah\Desktop\Sensor de temperatura Junior\lora.c
+[v _readRegister readRegister `(uc  1 e 1 0 ]
+"85
+[v _singleTransfer singleTransfer `(uc  1 e 1 0 ]
+"619
+[v _delay delay `(v  1 e 1 0 ]
+"8 C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
 [v _main main `(v  1 e 1 0 ]
-"16 C:\Users\renah\Desktop\Sensor de temperatura Junior\max6675.c
-[v _max6675_power_on max6675_power_on `(v  1 e 1 0 ]
-"30
-[v _max6675_get_temp max6675_get_temp `(us  1 e 2 0 ]
 "56 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 "83
@@ -75,7 +77,7 @@
 [v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
 "1879
 [v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
-[s S220 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S199 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -85,11 +87,11 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "1905
-[u S229 . 1 `S220 1 . 1 0 ]
-[v _RC1STAbits RC1STAbits `VES229  1 e 1 @285 ]
+[u S208 . 1 `S199 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES208  1 e 1 @285 ]
 "2059
 [v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
-[s S199 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S178 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -99,8 +101,8 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "2085
-[u S208 . 1 `S199 1 . 1 0 ]
-[v _TX1STAbits TX1STAbits `VES208  1 e 1 @286 ]
+[u S187 . 1 `S178 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES187  1 e 1 @286 ]
 "2239
 [v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
 "2485
@@ -109,7 +111,7 @@
 [v _SSP1ADD SSP1ADD `VEuc  1 e 1 @397 ]
 "2695
 [v _SSP1STAT SSP1STAT `VEuc  1 e 1 @399 ]
-[s S335 . 1 `uc 1 BF 1 0 :1:0 
+[s S314 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -119,33 +121,33 @@
 `uc 1 SMP 1 0 :1:7 
 ]
 "2804
-[s S344 . 1 `uc 1 . 1 0 :2:0 
+[s S323 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S349 . 1 `uc 1 . 1 0 :2:0 
+[s S328 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S354 . 1 `uc 1 . 1 0 :2:0 
+[s S333 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S359 . 1 `uc 1 . 1 0 :2:0 
+[s S338 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DATA_ADDRESS 1 0 :1:5 
 ]
-[s S364 . 1 `uc 1 . 1 0 :2:0 
+[s S343 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ 1 0 :1:2 
 `uc 1 I2C_START 1 0 :1:3 
 `uc 1 I2C_STOP 1 0 :1:4 
 `uc 1 I2C_DAT 1 0 :1:5 
 ]
-[s S370 . 1 `uc 1 BF1 1 0 :1:0 
+[s S349 . 1 `uc 1 BF1 1 0 :1:0 
 `uc 1 UA1 1 0 :1:1 
 `uc 1 R 1 0 :1:2 
 `uc 1 START 1 0 :1:3 
@@ -154,66 +156,66 @@
 `uc 1 CKE1 1 0 :1:6 
 `uc 1 SMP1 1 0 :1:7 
 ]
-[s S379 . 1 `uc 1 . 1 0 :2:0 
+[s S358 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RW 1 0 :1:2 
 `uc 1 START1 1 0 :1:3 
 `uc 1 STOP1 1 0 :1:4 
 `uc 1 DA 1 0 :1:5 
 ]
-[s S385 . 1 `uc 1 . 1 0 :2:0 
+[s S364 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RW1 1 0 :1:2 
 `uc 1 I2C_START1 1 0 :1:3 
 `uc 1 I2C_STOP2 1 0 :1:4 
 `uc 1 DA1 1 0 :1:5 
 ]
-[s S391 . 1 `uc 1 . 1 0 :2:0 
+[s S370 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ1 1 0 :1:2 
 `uc 1 S2 1 0 :1:3 
 `uc 1 P2 1 0 :1:4 
 `uc 1 DATA_ADDRESS1 1 0 :1:5 
 ]
-[s S397 . 1 `uc 1 . 1 0 :2:0 
+[s S376 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE1 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A1 1 0 :1:5 
 ]
-[s S402 . 1 `uc 1 . 1 0 :2:0 
+[s S381 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W1 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_nA1 1 0 :1:5 
 ]
-[s S407 . 1 `uc 1 . 1 0 :2:0 
+[s S386 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_nW1 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 I2C_DAT1 1 0 :1:5 
 ]
-[s S412 . 1 `uc 1 . 1 0 :2:0 
+[s S391 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW2 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA2 1 0 :1:5 
 ]
-[s S417 . 1 `uc 1 . 1 0 :2:0 
+[s S396 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE1 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS1 1 0 :1:5 
 ]
-[u S422 . 1 `S335 1 . 1 0 `S344 1 . 1 0 `S349 1 . 1 0 `S354 1 . 1 0 `S359 1 . 1 0 `S364 1 . 1 0 `S370 1 . 1 0 `S379 1 . 1 0 `S385 1 . 1 0 `S391 1 . 1 0 `S397 1 . 1 0 `S402 1 . 1 0 `S407 1 . 1 0 `S412 1 . 1 0 `S417 1 . 1 0 ]
-[v _SSP1STATbits SSP1STATbits `VES422  1 e 1 @399 ]
+[u S401 . 1 `S314 1 . 1 0 `S323 1 . 1 0 `S328 1 . 1 0 `S333 1 . 1 0 `S338 1 . 1 0 `S343 1 . 1 0 `S349 1 . 1 0 `S358 1 . 1 0 `S364 1 . 1 0 `S370 1 . 1 0 `S376 1 . 1 0 `S381 1 . 1 0 `S386 1 . 1 0 `S391 1 . 1 0 `S396 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES401  1 e 1 @399 ]
 "3059
 [v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @400 ]
-[s S289 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S268 . 1 `uc 1 SSPM 1 0 :4:0 
 `uc 1 CKP 1 0 :1:4 
 `uc 1 SSPEN 1 0 :1:5 
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
 "3089
-[s S295 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S274 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
 ]
-[s S300 . 1 `uc 1 SSPM01 1 0 :1:0 
+[s S279 . 1 `uc 1 SSPM01 1 0 :1:0 
 `uc 1 SSPM11 1 0 :1:1 
 `uc 1 SSPM21 1 0 :1:2 
 `uc 1 SSPM31 1 0 :1:3 
@@ -222,9 +224,9 @@
 `uc 1 SSPOV1 1 0 :1:6 
 `uc 1 WCOL1 1 0 :1:7 
 ]
-[u S309 . 1 `S289 1 . 1 0 `S295 1 . 1 0 `S300 1 . 1 0 ]
-[v _SSP1CON1bits SSP1CON1bits `VES309  1 e 1 @400 ]
-[s S178 . 1 `uc 1 SSP1IF 1 0 :1:0 
+[u S288 . 1 `S268 1 . 1 0 `S274 1 . 1 0 `S279 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES288  1 e 1 @400 ]
+[s S157 . 1 `uc 1 SSP1IF 1 0 :1:0 
 `uc 1 BCL1IF 1 0 :1:1 
 `uc 1 SSP2IF 1 0 :1:2 
 `uc 1 BCL2IF 1 0 :1:3 
@@ -234,8 +236,8 @@
 `uc 1 RC2IF 1 0 :1:7 
 ]
 "9418
-[u S187 . 1 `S178 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES187  1 e 1 @1807 ]
+[u S166 . 1 `S157 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES166  1 e 1 @1807 ]
 "9908
 [v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
 "9953
@@ -262,27 +264,27 @@
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
 "17364
 [v _PPSLOCK PPSLOCK `VEuc  1 e 1 @7823 ]
-[s S134 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+[s S113 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
 ]
 "17374
-[u S136 . 1 `S134 1 . 1 0 ]
-[v _PPSLOCKbits PPSLOCKbits `VES136  1 e 1 @7823 ]
+[u S115 . 1 `S113 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES115  1 e 1 @7823 ]
 "18138
 [v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @7877 ]
 "18196
 [v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @7878 ]
-[s S142 . 1 `uc 1 RX1DTPPS 1 0 :6:0 
+[s S121 . 1 `uc 1 RX1DTPPS 1 0 :6:0 
 ]
 "18504
-[s S144 . 1 `uc 1 RX1DTPPS0 1 0 :1:0 
+[s S123 . 1 `uc 1 RX1DTPPS0 1 0 :1:0 
 `uc 1 RX1DTPPS1 1 0 :1:1 
 `uc 1 RX1DTPPS2 1 0 :1:2 
 `uc 1 RX1DTPPS3 1 0 :1:3 
 `uc 1 RX1DTPPS4 1 0 :1:4 
 `uc 1 RX1DTPPS5 1 0 :1:5 
 ]
-[u S151 . 1 `S142 1 . 1 0 `S144 1 . 1 0 ]
-[v _RX1DTPPSbits RX1DTPPSbits `VES151  1 e 1 @7883 ]
+[u S130 . 1 `S121 1 . 1 0 `S123 1 . 1 0 ]
+[v _RX1DTPPSbits RX1DTPPSbits `VES130  1 e 1 @7883 ]
 "19334
 [v _RB6PPS RB6PPS `VEuc  1 e 1 @7966 ]
 "19554
@@ -331,160 +333,22 @@
 [v _ODCONE ODCONE `VEuc  1 e 1 @8038 ]
 "22158
 [v _SLRCONE SLRCONE `VEuc  1 e 1 @8039 ]
+"24202
+[v _LATA3 LATA3 `VEb  1 e 0 @195 ]
+"24205
+[v _LATA4 LATA4 `VEb  1 e 0 @196 ]
 "24265
 [v _LATD0 LATD0 `VEb  1 e 0 @216 ]
 "24268
 [v _LATD1 LATD1 `VEb  1 e 0 @217 ]
-"57 C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
+"8 C:\Users\renah\Desktop\Sensor de temperatura Junior\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"77
-[v main@i i `ul  1 a 4 38 ]
-"79
-[v main@temp temp `us  1 a 2 35 ]
-"78
-[v main@data data `uc  1 a 1 37 ]
-"100
-} 0
-"23 C:\Users\renah\Desktop\Sensor de temperatura Junior\app_uart.c
-[v _printf_num printf_num `(v  1 e 1 0 ]
-{
-"25
-[v printf_num@milhar milhar `uc  1 a 1 7 ]
-[v printf_num@centena centena `uc  1 a 1 6 ]
-[v printf_num@dezena dezena `uc  1 a 1 5 ]
-[v printf_num@unidade unidade `uc  1 a 1 4 ]
-"23
-[v printf_num@dado dado `us  1 p 2 1 ]
-"52
-} 0
-"6
-[v _printf printf `(v  1 e 1 0 ]
-{
-"8
-[v printf@i i `uc  1 a 1 7 ]
-"6
-[v printf@string string `*.25uc  1 p 2 1 ]
-[v printf@new_line new_line `uc  1 p 1 3 ]
-"21
-} 0
-"111 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/eusart1.c
-[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
-{
-[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
-[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
-[v EUSART1_Write@txData txData `uc  1 a 1 0 ]
-"118
-} 0
-"16 C:\Users\renah\Desktop\Sensor de temperatura Junior\max6675.c
-[v _max6675_power_on max6675_power_on `(v  1 e 1 0 ]
-{
-"20
-} 0
-"30
-[v _max6675_get_temp max6675_get_temp `(us  1 e 2 0 ]
-{
-"34
-[v max6675_get_temp@temp temp `f  1 a 4 30 ]
-"33
-[v max6675_get_temp@adc adc `us  1 a 2 28 ]
-"32
-[v max6675_get_temp@data1 data1 `uc  1 a 1 27 ]
-[v max6675_get_temp@data data `uc  1 a 1 26 ]
-"50
-} 0
-"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-{
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-"13
-[v ___xxtofl@arg arg `ul  1 a 4 10 ]
-"12
-[v ___xxtofl@exp exp `uc  1 a 1 9 ]
-"10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 0 ]
-"15
-[v ___xxtofl@sign sign `uc  1 a 1 8 ]
-"44
-} 0
-"43 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
-{
-"45
-[v ___fltol@exp1 exp1 `uc  1 a 1 10 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 9 ]
-"43
-[v ___fltol@f1 f1 `d  1 p 4 0 ]
-"70
-} 0
-"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
-{
-[s S695 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
-"13
-[s S700 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S703 . 4 `l 1 i 4 0 `d 1 f 4 0 `S695 1 fAsBytes 4 0 `S700 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S703  1 a 4 15 ]
-"12
-[v ___flmul@grs grs `ul  1 a 4 9 ]
-[s S772 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
-"14
-[u S775 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S772 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S775  1 a 2 19 ]
-"10
-[v ___flmul@bexp bexp `uc  1 a 1 14 ]
-"11
-[v ___flmul@aexp aexp `uc  1 a 1 13 ]
-"9
-[v ___flmul@sign sign `uc  1 a 1 8 ]
-"8
-[v ___flmul@b b `d  1 p 4 0 ]
-[v ___flmul@a a `d  1 p 4 4 ]
-"205
-} 0
-"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
-[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-{
-[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
-"6
-[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
-"5
-[v __Umul8_16@product product `ui  1 a 2 4 ]
-"4
-[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
-[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
-[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
-"60
-} 0
-"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 4 0 ]
-{
-"21
-[v ___fldiv@grs grs `ul  1 a 4 7 ]
-"22
-[v ___fldiv@rem rem `ul  1 a 4 0 ]
-"20
-[v ___fldiv@new_exp new_exp `i  1 a 2 5 ]
-"19
-[v ___fldiv@aexp aexp `uc  1 a 1 12 ]
-"18
-[v ___fldiv@bexp bexp `uc  1 a 1 11 ]
-"16
-[v ___fldiv@sign sign `uc  1 a 1 4 ]
-"8
-[v ___fldiv@a a `d  1 p 4 0 ]
-[v ___fldiv@b b `d  1 p 4 4 ]
-"185
-} 0
-"79 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/spi1.c
-[v _SPI1_Exchange8bit SPI1_Exchange8bit `(uc  1 e 1 0 ]
-{
-[v SPI1_Exchange8bit@data data `uc  1 a 1 wreg ]
-[v SPI1_Exchange8bit@data data `uc  1 a 1 wreg ]
-"82
-[v SPI1_Exchange8bit@data data `uc  1 a 1 0 ]
-"91
+"28
+[v main@i i `ul  1 a 4 3 ]
+"29
+[v main@data data `uc  1 a 1 2 ]
+"49
 } 0
 "50 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -504,7 +368,7 @@
 "57 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"137
+"130
 } 0
 "59 C:\Users\renah\Desktop\Sensor de temperatura Junior\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
@@ -520,6 +384,14 @@
 [v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
 {
 "86
+} 0
+"111
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+{
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 0 ]
+"118
 } 0
 "93
 [v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]

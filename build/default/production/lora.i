@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "lora.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,9 +6,17 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 1 "./mcc_generated_files/mcc.h" 1
-# 49 "./mcc_generated_files/mcc.h"
+# 1 "lora.c" 2
+
+
+
+# 1 "./lora.h" 1
+
+
+
+
+
+
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -13210,17 +13218,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 216 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 228 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
+# 7 "./lora.h" 2
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdint.h" 3
@@ -13293,13 +13291,29 @@ typedef int32_t int_fast32_t;
 typedef uint32_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 131 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "./mcc_generated_files/mcc.h" 2
+# 8 "./lora.h" 2
+# 20 "./lora.h"
+int lora_begin(long frequency);
+uint8_t readRegister(uint8_t address);
+uint8_t singleTransfer(uint8_t address, uint8_t data);
+# 4 "lora.c" 2
 
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
+# 1 "./app_uart.h" 1
+
+
+
+
+
+
+void printf(uint8_t string[30], uint8_t new_line);
+void printf_num(uint16_t dado);
+# 5 "lora.c" 2
 
 # 1 "./mcc_generated_files/spi1.h" 1
-# 55 "./mcc_generated_files/spi1.h"
+# 54 "./mcc_generated_files/spi1.h"
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stdbool.h" 1 3
+# 54 "./mcc_generated_files/spi1.h" 2
+
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stddef.h" 1 3
 # 19 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\stddef.h" 3
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -13319,87 +13333,54 @@ _Bool SPI1_IsBufferFull(void);
 _Bool SPI1_HasWriteCollisionOccured(void);
 # 264 "./mcc_generated_files/spi1.h"
 void SPI1_ClearWriteCollisionStatus(void);
-# 54 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/eusart1.h" 1
-# 97 "./mcc_generated_files/eusart1.h"
-void EUSART1_Initialize(void);
-# 145 "./mcc_generated_files/eusart1.h"
-_Bool EUSART1_is_tx_ready(void);
-# 193 "./mcc_generated_files/eusart1.h"
-_Bool EUSART1_is_rx_ready(void);
-# 240 "./mcc_generated_files/eusart1.h"
-_Bool EUSART1_is_tx_done(void);
-# 260 "./mcc_generated_files/eusart1.h"
-uint8_t EUSART1_Read(void);
-# 280 "./mcc_generated_files/eusart1.h"
-void EUSART1_Write(uint8_t txData);
-# 55 "./mcc_generated_files/mcc.h" 2
-# 70 "./mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 83 "./mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 96 "./mcc_generated_files/mcc.h"
-void PMD_Initialize(void);
-# 1 "main.c" 2
-
-# 1 "./app_uart.h" 1
+# 6 "lora.c" 2
+# 77 "lora.c"
+void delay(uint16_t ms);
 
 
+uint8_t readRegister(uint8_t address)
+{
+    return singleTransfer(address & 0x7f, 0x00);
+}
 
+uint8_t singleTransfer(uint8_t address, uint8_t data)
+{
+    uint8_t response;
 
+    LATA4 = 0;
+    SPI1_Exchange8bit(address);
+    response = SPI1_Exchange8bit(data);
+    LATA4 = 1;
 
+    return response;
+}
 
-void printf(uint8_t string[30], uint8_t new_line);
-void printf_num(uint16_t dado);
-# 2 "main.c" 2
-
-# 1 "./max6675.h" 1
-
-
-
-
-
-
-void max6675_power_on(void);
-void max6675_power_off(void);
-uint16_t max6675_get_temp(void);
-# 3 "main.c" 2
-
-# 1 "./lora.h" 1
-# 20 "./lora.h"
-int lora_begin(long frequency);
-uint8_t readRegister(uint8_t address);
-uint8_t singleTransfer(uint8_t address, uint8_t data);
-# 4 "main.c" 2
-
-
-
-
-void main(void)
+int lora_begin(long frequency)
 {
 
-    SYSTEM_Initialize();
-# 28 "main.c"
-    uint32_t i;
-    uint8_t data;
+  LATA4 = 1;
 
 
-
-    while (1)
-    {
-        for(i=0;i<40000;i++);
-        for(i=0;i<40000;i++);
-
+  LATA3 = 0;
+  delay(10);
+  LATA3 = 1;
+  delay(10);
 
 
-        LATD0 ^= 1;
+  uint8_t version = readRegister(0x42);
+  printf("Versao Lora: /n",0);
+  printf_num(version);
+  printf("/n",1);
 
-        if(EUSART1_is_rx_ready())
-        {
-            data = EUSART1_Read();
-            EUSART1_Write(data);
-            EUSART1_Write('H');
-        }
-    }
+  if (version != 0x12) {
+    return 0;
+  }
+}
+# 619 "lora.c"
+void delay(uint16_t ms)
+{
+    uint16_t i,j;
+
+    for(i=0;i<ms;i++)
+      for(j=0;j<1000;j++);
 }

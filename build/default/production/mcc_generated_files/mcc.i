@@ -13217,9 +13217,9 @@ extern __bank0 __bit __timeout;
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 176 "mcc_generated_files/pin_manager.h"
+# 216 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 188 "mcc_generated_files/pin_manager.h"
+# 228 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -13364,7 +13364,7 @@ void OSCILLATOR_Initialize(void)
 
     OSCEN = 0x00;
 
-    OSCFRQ = 0x06;
+    OSCFRQ = 0x03;
 
     OSCSTAT = 0x00;
 

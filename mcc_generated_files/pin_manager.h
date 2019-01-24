@@ -59,6 +59,46 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
+// get/set IO_RA3 aliases
+#define IO_RA3_TRIS                 TRISAbits.TRISA3
+#define IO_RA3_LAT                  LATAbits.LATA3
+#define IO_RA3_PORT                 PORTAbits.RA3
+#define IO_RA3_WPU                  WPUAbits.WPUA3
+#define IO_RA3_OD                   ODCONAbits.ODCA3
+#define IO_RA3_ANS                  ANSELAbits.ANSA3
+#define IO_RA3_SetHigh()            do { LATAbits.LATA3 = 1; } while(0)
+#define IO_RA3_SetLow()             do { LATAbits.LATA3 = 0; } while(0)
+#define IO_RA3_Toggle()             do { LATAbits.LATA3 = ~LATAbits.LATA3; } while(0)
+#define IO_RA3_GetValue()           PORTAbits.RA3
+#define IO_RA3_SetDigitalInput()    do { TRISAbits.TRISA3 = 1; } while(0)
+#define IO_RA3_SetDigitalOutput()   do { TRISAbits.TRISA3 = 0; } while(0)
+#define IO_RA3_SetPullup()          do { WPUAbits.WPUA3 = 1; } while(0)
+#define IO_RA3_ResetPullup()        do { WPUAbits.WPUA3 = 0; } while(0)
+#define IO_RA3_SetPushPull()        do { ODCONAbits.ODCA3 = 0; } while(0)
+#define IO_RA3_SetOpenDrain()       do { ODCONAbits.ODCA3 = 1; } while(0)
+#define IO_RA3_SetAnalogMode()      do { ANSELAbits.ANSA3 = 1; } while(0)
+#define IO_RA3_SetDigitalMode()     do { ANSELAbits.ANSA3 = 0; } while(0)
+
+// get/set IO_RA4 aliases
+#define IO_RA4_TRIS                 TRISAbits.TRISA4
+#define IO_RA4_LAT                  LATAbits.LATA4
+#define IO_RA4_PORT                 PORTAbits.RA4
+#define IO_RA4_WPU                  WPUAbits.WPUA4
+#define IO_RA4_OD                   ODCONAbits.ODCA4
+#define IO_RA4_ANS                  ANSELAbits.ANSA4
+#define IO_RA4_SetHigh()            do { LATAbits.LATA4 = 1; } while(0)
+#define IO_RA4_SetLow()             do { LATAbits.LATA4 = 0; } while(0)
+#define IO_RA4_Toggle()             do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0)
+#define IO_RA4_GetValue()           PORTAbits.RA4
+#define IO_RA4_SetDigitalInput()    do { TRISAbits.TRISA4 = 1; } while(0)
+#define IO_RA4_SetDigitalOutput()   do { TRISAbits.TRISA4 = 0; } while(0)
+#define IO_RA4_SetPullup()          do { WPUAbits.WPUA4 = 1; } while(0)
+#define IO_RA4_ResetPullup()        do { WPUAbits.WPUA4 = 0; } while(0)
+#define IO_RA4_SetPushPull()        do { ODCONAbits.ODCA4 = 0; } while(0)
+#define IO_RA4_SetOpenDrain()       do { ODCONAbits.ODCA4 = 1; } while(0)
+#define IO_RA4_SetAnalogMode()      do { ANSELAbits.ANSA4 = 1; } while(0)
+#define IO_RA4_SetDigitalMode()     do { ANSELAbits.ANSA4 = 0; } while(0)
+
 // get/set SCK1 aliases
 #define SCK1_TRIS                 TRISCbits.TRISC3
 #define SCK1_LAT                  LATCbits.LATC3
